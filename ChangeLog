@@ -1,0 +1,47 @@
+commit 60c86dee7fe25271e51a4fe397a76bcd00726e28 (HEAD, tag: v1.18.1, origin/v1.18.x, origin/HEAD, v1.18.x)
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-01-05
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-01-05
+
+    Update man pages
+
+commit eaf38c8c985b0262969e1bb92b52033c48bfd42b
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-01-03
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-01-03
+
+    Bump up version number to v1.18.1
+
+commit 417321072f0a266528b82e05528039cccf34ad2c
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-01-03
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-01-03
+
+    nghttpx: Fix assertion error in libev ev_io_start
+
+commit fafccc4b98a332c1518f07c519ce0a891ba77983
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-01-03
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-01-03
+
+    nghttpx: Handle c-ares success without result
+
+commit 483e5f4e7b380fba7aee172ac0f96733787cf49e
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-12-30
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-01-03
+
+    nghttpx: Fix bug that DNS timeout was erroneously disabled
+
+commit db3a5f9aefebe05aa922ea790ab93dba88444d0a
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-12-30
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-01-03
+
+    nghttpx: Fix bug that DNS timeout was ignored
