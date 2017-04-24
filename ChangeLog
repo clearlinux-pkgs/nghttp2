@@ -1,4 +1,213 @@
-commit ec542f140b5e0d86ad6954476f9ed2d018f47e72 (HEAD, tag: v1.21.1, origin/v1.21.x, origin/HEAD, v1.21.x)
+commit 2f146e4d4cfe895d65599b87df7d847435f0e1b4 (HEAD, tag: v1.22.0, origin/master, origin/HEAD, master)
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-24
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-24
+
+    Update manual pages
+
+commit f796eede5a1ad13a40d7006832aa73416d173e82
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-24
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-24
+
+    Bump up version number to 1.22.0, LT revision to 27:2:13
+
+commit c89453be951634ee22264e805ce39b57871147c1
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-24
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-24
+
+    Update AUTHORS
+
+commit c3f5f5ca361a94093c82f2bc4e7b87075c8e55ba
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-20
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-20
+
+    nghttpx: Clarify --conf option behaviour
+
+commit 911d12f7c4de2c67c16f969b176cca29dbbf7cd1
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-20
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-20
+
+    nghttpx: Add log when loading configuration file
+
+commit 34d3c45d358e70cbe98f87f4e187d7e51080c967
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-19
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-19
+
+    Update manual pages
+
+commit 17614312e0d68a0a0ee178e0e104401af85403ac
+Merge: 977779ae c8a5f1e3
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-19
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2017-04-19
+
+    Merge pull request #892 from nghttp2/nghttpx-sni-fwd
+    
+    nghttpx: SNI based backend server selection
+
+commit 977779ae8d29246d02498b4bc37d30857a29a97f
+Merge: a4a2b640 a2e35a07
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-19
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2017-04-19
+
+    Merge pull request #896 from nghttp2/nghttpx-add-tls-sni-log-var
+    
+    nghttpx: Add $tls_sni access log variable
+
+commit a2e35a075794f98df4b1ce445ffa2c5eea373b8a
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-18
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-18
+
+    nghttpx: Add $tls_sni access log variable
+
+commit a4a2b6403b7e7c4d86178be884e0ef2a6565579d
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-18
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-18
+
+    nghttpx: Use SHRPX_LOGF_TLS_* instead of SHRPX_LOGF_SSL_*
+
+commit 8ce8e289c95ae036ebc1c61a69655b3f11cba90d
+Merge: 2c5cf5a8 03be97e4
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-18
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2017-04-18
+
+    Merge pull request #895 from nghttp2/nghttpx-rename-ssl-log-vars
+    
+    nghttpx: Rename ssl_* log variables as tls_*
+
+commit 03be97e4374cd033b13e8918efd618a96886e7be
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-18
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-18
+
+    nghttpx: Rename ssl_* log variables as tls_*
+    
+    The exiting ssl_* log variables still work for backward compatibility.
+
+commit 2c5cf5a82a84734782f04a868f892179296cb9b0
+Merge: 5e00cf96 0a2d1965
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-18
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2017-04-18
+
+    Merge pull request #894 from nghttp2/nghttpx-fix-path-match
+    
+    nghttpx: Fix path matching bug
+
+commit 0a2d1965df6ff1a55702b649489da3bf8c207230
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-18
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-18
+
+    nghttpx: Fix path matching bug
+    
+    Previously, if path is empty or path does not start with "/", nghttpx
+    did not try to match with wildcard pattern.  This commit fixes it.
+
+commit c8a5f1e335aa0cda7fc7036ffdc8ef17318c72cd
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-16
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-16
+
+    nghttpx: SNI based backend server selection
+
+commit 5e00cf9620a00d1895d2b7a03eba5057baae4d4b
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-14
+
+    Update doc
+
+commit ce6370e25c1f2caf49e0af965c3aaba941ecbedc
+Merge: 3f8c1e4b 25cda200
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-14
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2017-04-14
+
+    Merge pull request #886 from lstefani/patch-1
+    
+    Update nghttp2_session.c
+
+commit 3f8c1e4b34d88bca2556de149ce1dd815d760436
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-14
+
+    tests: Fix failmalloc tests
+
+commit 25cda200be2d5dee698d7ae993f451dff5ade8ce
+Author:     lstefani <larry.stefani@sonos.com>
+AuthorDate: 2017-04-13
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2017-04-13
+
+    Update nghttp2_session.c
+    
+    Add missing free call on error in inflight_settings_new().
+
+commit a1bc83a2ba2ecc4b229dce39f4b9657ff8cb900b
+Merge: 6cfa8852 bc3949db
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-12
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2017-04-12
+
+    Merge pull request #881 from mway/dev/request-priority
+    
+    Support specifying stream priority via session::submit()
+
+commit bc3949db9e580dcc3f35f6e48949dd3c59fb6bd6
+Author:     Matt Way <mway@uber.com>
+AuthorDate: 2017-04-11
+Commit:     Matt Way <mway@uber.com>
+CommitDate: 2017-04-12
+
+    Support specifying stream priority via session::submit()
+
+commit 6cfa8852076bcf48b3022055c875ef016ed0ebe2
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-12
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-12
+
+    nghttpx: Remove unused lambda capture
+
+commit 899588e0b5014a42bde4207e9a232464f6cfe74a
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-09
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-09
+
+    Update bash_completion
+
+commit 49af52a68d6626c452b334895352dce6078be02b
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
 AuthorDate: 2017-04-09
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
@@ -6,34 +215,383 @@ CommitDate: 2017-04-09
 
     Update manual pages
 
-commit 39a2a2437c76a23539a44abb1bb328396b6d2f6f
+commit ec908af19c2ae88342174c2262151d4faa488263
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
 AuthorDate: 2017-04-09
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
 CommitDate: 2017-04-09
 
-    Bump up version number to 1.21.1
+    integration: Use nip.io instead of xip.io
 
-commit a073dfc633827cec6aa4b2e7b059ba316d81c5b7
+commit e61ac4682eff59ae73452b7ae9ac66c2a50ce2b3
+Merge: 4d10dce6 2670bfb8
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-09
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-09
+
+    Merge branch 'nghttpx-xfp-take2'
+
+commit 4d10dce61d7a25b20612df102ae9a5822de569b0
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-09
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-09
+
+    nghttpx: Only send SCT for leaf certificate
+
+commit c569830dfcb1c4145b24a4db6f01236e414c4964
+Merge: 980570de 2d9fd870
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-09
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-09
+
+    Merge branch 'nghttpx-tls13-sct'
+
+commit 2d9fd870297c3b8616ade63be86c0fb0f6f15500
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-09
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-09
+
+    nghttpx: Enable signed_certificate_timestamp extension for TLSv1.3
+
+commit 2670bfb8baeae65adc761ec4e30190e981f8f0fd
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-05
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-08
+
+    integration: Add tests for X-Forwarded-Proto handling
+
+commit cc9190ab376c059d0372bde7c615f3f83bce5a4e
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-05
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-08
+
+    nghttpx: Add options for X-Forwarded-Proto header field
+    
+    This commit adds 2 new options to handle X-Forwarded-Proto header
+    field.  The --no-add-x-forwarded-proto option makes nghttpx not to
+    append X-Forwarded-Proto value.  The
+    --no-strip-incoming-x-forwarded-proto option prevents nghttpx from
+    stripping the header field from client.
+    
+    Previously, nghttpx always strips incoming header field, and set its
+    own header field.  This commit preserves this behaviour, and adds
+    additional knobs.
+
+commit 980570de71f37d8a42d21877636585dbaee5dae7
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-08
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-08
+
+    Revert "nghttpx: Add options for X-Forwarded-Proto header field"
+    
+    This reverts commit 8c0b2c684a5effd0782aaf46f676e4057ddd037f.
+
+commit ef92b54db3b84720ed919640e5108783fcf1b8ad
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-08
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-08
+
+    Revert "integration: Add tests for X-Forwarded-Proto handling"
+    
+    This reverts commit 6aa581d2f05efd70c6e1fcf5689dd176bce76240.
+
+commit 0130124ceae5c6880608d581d2c3e0328f1334e2
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-08
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-08
+
+    Revert "doc: Add migration doc for nghttpx"
+    
+    This reverts commit 82b326e6842c30e314576e69ba8d10df630f5101.
+
+commit e2a7e867f9ac6231f7b55c62bbff54caf64ed8bc
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
 AuthorDate: 2017-04-07
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-04-09
+CommitDate: 2017-04-07
+
+    integration: Add more tests for 204 status code
+
+commit 32ce0ce5d9c8c21383df4775c67709e2d11dfa02
+Merge: 3a1217e6 28082ff5
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-07
+
+    Merge branch 'nghttpx-fix-204-handling'
+
+commit 28082ff5f54a883e730a35b659d8ada91aaa8641
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-07
+
+    integration: Add tests for 204 status code
+
+commit 46ccc4332c2217fcc9c7589a81b506b4b5a57455
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-07
 
     nghttpx: Fix bug that 204 from h1 backend is always treated as error
 
-commit d2ba169f792143eaf85b90f403beb84b3b8d354e
+commit 3a1217e66752adbdc6fc697c6380af2e9b4e78f6
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-06
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-06
+
+    Update bash_completion
+
+commit 39fd0c1278305cf69cdd6fec8dfbb313a2e4a5f3
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-06
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-06
+
+    Update manual pages
+
+commit 4e6bd54dd1f55f0cfba83576f2527e36e06022a3
+Merge: 5c9f46a6 223e971c
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-06
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-06
+
+    Merge branch 'nghttpx-single-process'
+
+commit 5c9f46a6b0698f9a767e8ae704e471cfe309180e
+Merge: 7d538661 7ae0b2dc
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-06
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-06
+
+    Merge branch 'nghttp-verify-server-certificate'
+
+commit 7d53866157e34ea115ce0bd72203c5610cb694bf
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-06
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-06
+
+    Update doc
+
+commit 9a2e948c426883089d4fb1e9567145ac201b53a1
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-06
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-06
+
+    Update doc
+    
+    Add section to promote the build from tar archives.
+
+commit 223e971c7ea9446abe04ff2374d9483ad3cfdc1b
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-06
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-06
+
+    nghttpx: Add --single-process option
+    
+    With --single-process option, nghttpx will run in a single process
+    mode where master and worker are unified into one process.  nghttpx
+    still spawns additional process for neverbleed.  In the single process
+    mode, signal handling is disabled.
+
+commit df814223fffd58330abb1bd8e074a2cd5deb38a4
+Merge: 62324781 82b326e6
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-06
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-06
+
+    Merge branch 'nghttpx-xfp'
+
+commit 82b326e6842c30e314576e69ba8d10df630f5101
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-06
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-06
+
+    doc: Add migration doc for nghttpx
+
+commit 6aa581d2f05efd70c6e1fcf5689dd176bce76240
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-05
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-06
+
+    integration: Add tests for X-Forwarded-Proto handling
+
+commit 8c0b2c684a5effd0782aaf46f676e4057ddd037f
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-05
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-06
+
+    nghttpx: Add options for X-Forwarded-Proto header field
+    
+    This commit adds 2 new options to handle X-Forwarded-Proto header
+    field.  The --add-x-forwarded-proto option makes nghttpx append
+    X-Forwarded-Proto value.  The --strip-incoming-x-forwarded-proto
+    option makes nghttpx to strip the header field from client.
+    
+    Previously, nghttpx always strips incoming header field, and set its
+    own header field.  This commit changes this behaviour.  Now nghttpx
+    does not strip, and append X-Forwarded-Proto header field by default.
+    The X-Forwarded-For, and Forwarded header fields are also handled in
+    the same way.  To recover the old behaviour, use
+    --add-x-forwarded-proto and --strip-incoming-x-forwarded-proto
+    options.
+
+commit 62324781bdcfb9bb4f436f654457b65fae795fca
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-05
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-05
+
+    integration: Close channel instead of writing struct
+
+commit 7ae0b2dc098acf9dd70c4cd10e305c186c6e6aba
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-01
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-01
+
+    nghttp: Verify server certificate and show warning if it fails
+
+commit 058122b80437a63cc043a5a515b13d59ad2143f7
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-01
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-01
+
+    nghttpx: Rename shrpx_ssl.{h,cc} as shrpx_tls.{h,cc}
+    
+    The namespace shrpx::ssl was also renamed as shrpx::tls.
+
+commit 69f63c529da22d1ad01bb5323ffcced63c1e6ab8
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-01
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-01
+
+    src: Rename ssl.{h,cc} as tls.{h,cc}
+    
+    nghttp2::ssl namespace was also renamed as nghttp2::tls.
+
+commit e17a6b29b615a62ccd7dc9b0f9e9740daebaf1b7
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-01
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-01
+
+    nghttpx: Use 502 as server error code
+
+commit b12c2a13c08d5ad45734c2260df5de48d5945b68
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-01
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-01
+
+    nghttpx: Fail handshake if server certificate verification fails
+    
+    Previously, we drop connection if server certificate verification
+    fails after handshake.  With this commit, we fail handshake if that
+    happens.
+
+commit 236c835abc0d53f832b1ad2f760cfaae750b5f36
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-04-01
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-04-01
+
+    nghttpx: Don't enable SSL_MODE_AUTO_RETRY since we do non-blocking I/O
+
+commit b41a5afe04b8f51e2e3563193a7533035abf5f41
+Merge: a8995226 ad338bfa
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
 AuthorDate: 2017-03-31
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-04-09
+CommitDate: 2017-03-31
+
+    Merge branch 'fix-asio-client-ping'
+
+commit ad338bfa4470898ec8d7a3024625cd03dce50bca
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-03-31
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-03-31
 
     asio: Fix crash if connect takes longer time than ping interval
 
-commit a629a0c6770dda93f6507d5a6648df2b717569c2
+commit a899522679e41cc29d325acfc48f560f600b0254
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
 AuthorDate: 2017-03-31
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-04-09
+CommitDate: 2017-03-31
 
     asio: Fix compile error
+
+commit b9b58c781e0f6ac12c3cf0df308a4733a43c695d
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-03-30
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-03-30
+
+    nghttpx: Avoid extra TLS handshake calls
+
+commit aa1eec46420186add13f36529b7e9e3575664a45
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-03-28
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-03-30
+
+    nghttpx: Cache client side session inside openssl callback
+
+commit 0c8d9469eab02e2cf8bfd9a6adcbfa81a1ebdfe9
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-03-27
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-03-27
+
+    nghttpx: Use SSL_CTX_set_early_data_enabled with boringssl
+
+commit 079e1bdffc7ac74b4111282876046b2236d4c07c
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-03-27
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-03-27
+
+    Revert "nghttpx: Use SSL_CTX_set_early_data_enabled with boringssl"
+    
+    This reverts commit b4337d1b54855a3d2cc79c29d860e8db4e6e36ac.
+
+commit b4337d1b54855a3d2cc79c29d860e8db4e6e36ac
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-03-27
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-03-27
+
+    nghttpx: Use SSL_CTX_set_early_data_enabled with boringssl
+
+commit e6a11c5e1244485a162395a7d0727ce910274375
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-03-27
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-03-27
+
+    Bump up version number to 1.22.0-DEV
