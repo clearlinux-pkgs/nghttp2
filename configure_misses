@@ -1,0 +1,24 @@
+Configure miss: cython.py
+Configure miss: cython
+Configure miss: ev_time in -lev
+Configure miss: LIBCARES
+Configure miss: JANSSON
+Configure miss: library containing malloc_stats_print
+Configure miss: library containing je_malloc_stats_print
+Configure miss: struct sockaddr_in6.sin6_len
+Configure miss: sqrt
+Configure miss: i686-generic-linux-gnu-objdump
+Configure miss: i686-generic-linux-gnu-dlltool
+Configure miss: i686-generic-linux-gnu-strip
+Configure miss: i686-generic-linux-gnu-mt
+Configure miss: i686-generic-linux-gnu-pkg-config
+Configure miss: consistency of all components of python development environment
+Configure miss: cython.py
+Configure miss: cython
+Configure miss: ev_time in -lev
+Configure miss: LIBCARES
+Configure miss: JANSSON
+Configure miss: library containing malloc_stats_print
+Configure miss: library containing je_malloc_stats_print
+Configure miss: struct sockaddr_in6.sin6_len
+Configure miss: sqrt
