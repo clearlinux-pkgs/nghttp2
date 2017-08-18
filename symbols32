@@ -45,6 +45,7 @@ libnghttp2.so.14:nghttp2_priority_spec_init
 libnghttp2.so.14:nghttp2_rcbuf_decref
 libnghttp2.so.14:nghttp2_rcbuf_get_buf
 libnghttp2.so.14:nghttp2_rcbuf_incref
+libnghttp2.so.14:nghttp2_rcbuf_is_static
 libnghttp2.so.14:nghttp2_select_next_protocol
 libnghttp2.so.14:nghttp2_session_callbacks_del
 libnghttp2.so.14:nghttp2_session_callbacks_new
