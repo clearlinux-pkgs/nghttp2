@@ -1,500 +1,204 @@
-commit 939ad5ddbeeb153c6df23ddfb33b0e9b299708a5 (HEAD, tag: v1.28.0, origin/master, origin/HEAD, master)
+commit 439b9b6c6a3120da7a75ace62e9223751f4342c0 (HEAD, tag: v1.29.0, origin/master, origin/HEAD, master)
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-25
+AuthorDate: 2017-12-19
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-25
+CommitDate: 2017-12-19
 
     Update manual pages
 
-commit 24d92b979d36ebe82b24c831265ea1352a1aa0ff
+commit 48498452925b7d0bc5d883a3f76d01855d53d0cf
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-25
+AuthorDate: 2017-12-19
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-25
+CommitDate: 2017-12-19
 
-    Add deprecation warning when spdylay support is enabled
+    Bump up version number to v1.29.0, LT revision to 29:1:15
 
-commit 4c92ff1843328a97f9b51ed71513048159bff81c
+commit d30f38163c996d7aae43519d9245d7d87fd9a783
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-25
+AuthorDate: 2017-12-17
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-25
-
-    Bump up version number to 1.28.0, LT revision to 29:0:15
-
-commit 280db5c6baaae64fdf259803ee170e9f4d280b21
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-25
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-25
-
-    Update neverbleed
-
-commit 7fbcb2d0053a6dcd0af641e2fcc7e6c3a70e5bab
-Merge: ff200bfc 53aeb2c3
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-24
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-11-24
-
-    Merge pull request #1074 from nghttp2/fix-doc
-    
-    Fix doc
-
-commit 53aeb2c3d7f080a5015818699afecc8eba62f171
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-24
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-24
-
-    Fix doc
-
-commit ff200bfcf34044d364714d45f2227bb5dab55171
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-23
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-23
-
-    clang-format-5.0
-
-commit fee3151fd2fa5e017cda1d7eec21750f8672e344
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-23
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-23
-
-    Switch to clang-format-5.0
-
-commit 99a85159ae2e4d2bacfd8d2b305f7caeb31e69eb
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-21
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-21
+CommitDate: 2017-12-17
 
     Update manual pages
 
-commit 2a981a3f566f24b8f7127ea93f51ddce2d376563
-Merge: ee8bfddf 0028275d
+commit cff9ebe1ddf53d61dd2c66d4f68b7b7265ecdac0
+Merge: 48f57407 4d1139f6
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-21
+AuthorDate: 2017-12-17
 Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-11-21
+CommitDate: 2017-12-17
 
-    Merge pull request #1066 from nghttp2/nghttpx-add-affinity-cookie-secure
+    Merge pull request #1091 from nghttp2/remove-spdy
     
-    nghttpx: Add affinity-cookie-secure parameter to backend option
+    Remove SPDY
 
-commit 0028275d7bd0028ef53b594afe54b6282ffdfa4f
+commit 4d1139f65399c437700cf51bec98832e05a89f06
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-21
+AuthorDate: 2017-12-17
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-21
+CommitDate: 2017-12-17
 
-    nghttpx: Add affinity-cookie-secure parameter to backend option
+    Remove SPDY
 
-commit ee8bfddfc93625d555837ad6623b95ef46e1981f
-Merge: 73344ae9 194acb1f
+commit 48f574076c9ef0104ed6e73ef02e30de46bd7b74
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-21
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-11-21
-
-    Merge pull request #1063 from nghttp2/error_callback2
-    
-    Error callback2
-
-commit 194acb1f2c838ba9ed8b75b3348120650491db6a
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-19
+AuthorDate: 2017-12-16
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-19
+CommitDate: 2017-12-16
 
-    src: Use nghttp2_error_callback2
+    nghttpx: Update doc
 
-commit 43a2a70ae7cd5bbc8a6c9b9f8a9e525924c74782
+commit c1f14d73c7ae64391c024c3187984fbda2a51bbf
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-19
+AuthorDate: 2017-12-14
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-19
-
-    Add nghttp2_error_callback2
-    
-    nghttp2_error_callback2 is an extended version of the existing
-    nghttp2_error_callback by adding error code parameter.  This
-    deprecates nghttp2_error_callback.
-
-commit 73344ae9aa1e73e2045d2b48a4d2e3a3a62738e5
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-17
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-17
-
-    nghttpx: Use plain hex string format for client serial
-
-commit c479f6122fc60ab6988e8fd2a9db6fcbb1cdcefb
-Merge: d402cfdf eca0a302
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-16
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-11-16
-
-    Merge pull request #1060 from nghttp2/nghttpx-add-client-serial
-    
-    Nghttpx add client serial
-
-commit eca0a3025bcc3f64e0e51aee9e69971b941008c4
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-16
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-16
-
-    nghttpx: Add $tls_client_serial log variable
-
-commit 4720c5cb3d47fd84b855b4758fc37145cef0a39d
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-16
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-16
-
-    nghttpx: Make client serial available in mruby script
-
-commit cd55ab28abb8c6cad06a70bd7fadd4389a3978b8
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-16
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-16
-
-    nghttpx: Add function to get serial number from certificate
-
-commit d402cfdf1607d6f94a4029752fd949ee1da30bb9
-Merge: 05e1fd5e 22502182
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-16
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-11-16
-
-    Merge pull request #1057 from nghttp2/nghttpx-add-tls-client-issuer-name
-    
-    Add tls_client_issuer_name log variable and expose it to mruby
-
-commit 22502182d0cb3472ba9f1b4624765aee13e186e0
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-15
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-15
-
-    Add tls_client_issuer_name log variable and expose it to mruby
-
-commit 05e1fd5e772c5e5f6c1b12fc94f3bd0fca3e5a84
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-04
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-04
+CommitDate: 2017-12-14
 
     Update manual pages
 
-commit 943d7923f9d1a955f6c23a3f50b6a8767a236461
+commit 216f4dad83a0fb0778b915c9d29f957438b0ba18
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-04
+AuthorDate: 2017-12-14
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-04
+CommitDate: 2017-12-14
 
-    Add Session Affinity section to nghttpx howto
+    nghttpx: Remove redundant check
 
-commit 568ecbfb28dacb5734c41582c8f189aebc779f11
+commit a4e27d766b57ebb8ac4c34db9b6da2026252a0d8
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-04
+AuthorDate: 2017-12-14
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-04
+CommitDate: 2017-12-14
 
-    doc: Add missing port
+    Revert "nghttpx: Use an existing h2 backend connection as much as possible"
+    
+    This reverts commit f507b5eee4b40a6621b39e8519c22a8d741794de.
+    
+    Balancing load is more important at the moment.
 
-commit f5ddd7f43bd44fa34e0027fed5cbbe7774d794f6
+commit 96df14d2ecb87e87e802d16e5b1388c0958c01e6
+Merge: 96ea9cda 2365f12e
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-04
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-04
-
-    nghttpx: Make initial_addr_idx_ unsigned
-
-commit 88abbce7e795f19963edc7a6ec52a0dd3d0f6310
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-04
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-04
-
-    nghttpx: Fix compile error with gcc
-
-commit 16e9036568d9c53aae0e9580571cfe6f693b10e1
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-04
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-04
-
-    nghttpx: Fix affinity retry
-
-commit fa7945c6271fb31dcceffb66cd4bf0d8ee1fd249
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-04
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-04
-
-    nghttpx: Refactor
-
-commit daca43f0ddc885052dcbda187bd1c32818fec680
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-04
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-04
-
-    nghttpx: Fix stalled backend connection on retry
-
-commit 16bc11e6700e769c5a2ee2fa9e0c3c379cee0ab8
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-04
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-04
-
-    nghttpx: Remove duplicated util::make_socket_nodelay
-
-commit 6f7e94cdba813f28f8dafc72de68e1457b9f0cfc
-Merge: 8c0ea56b 61efa15a
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-03
+AuthorDate: 2017-12-14
 Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-11-03
+CommitDate: 2017-12-14
 
-    Merge pull request #1047 from PiotrSikora/go_vet
+    Merge pull request #1084 from dvetutnev/cmake_module_path
     
-    integration: Fix issues reported by the `go vet` tool.
+    Fix CMAKE_MODULE_PATH
 
-commit 61efa15a14d95c6cfdf819b6eb6b8df05995eb29
-Author:     Piotr Sikora <piotrsikora@google.com>
-AuthorDate: 2017-11-02
-Commit:     Piotr Sikora <piotrsikora@google.com>
-CommitDate: 2017-11-02
+commit 2365f12e394541d22ba806f23313d73d4e976830
+Author:     Dmitriy Vetutnev <d.vetutnev@gmail.com>
+AuthorDate: 2017-12-06
+Commit:     Dmitriy Vetutnev <d.vetutnev@gmail.com>
+CommitDate: 2017-12-06
 
-    integration: Fix issues reported by the `go vet` tool.
-    
-    Signed-off-by: Piotr Sikora <piotrsikora@google.com>
+    Fix CMAKE_MODULE_PATH
 
-commit 8c0ea56bb81eb11fb1d77b9aecfc3f2ed2a13cf9
-Merge: 54905371 6010d393
+commit 96ea9cdaf78cefcbc220c6cad03d644061cfce16
+Merge: a9416999 03f7ec0f
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-01
+AuthorDate: 2017-12-03
 Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-11-01
+CommitDate: 2017-12-03
 
-    Merge pull request #1036 from nghttp2/nghttpx-affinity-cookie
+    Merge pull request #1083 from nghttp2/nghttpx-api-tmp-file
     
-    nghttpx: Cookie based session affinity
+    nghttpx: Write API request body in temporary file
 
-commit 549053710b2fc2c02269d598929293edd4392698
+commit 03f7ec0f60dd75121578a15d8320ace7def3a279
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-01
+AuthorDate: 2017-12-02
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-01
+CommitDate: 2017-12-03
 
-    nghttpx: Refactor
+    nghttpx: Write API request body in temporary file
 
-commit 6010d39325e74505503177e56a25787f18ec8b19
+commit a9416999628c5fa6cc226e5dffdfe750de30637e
+Merge: 04348ff2 2056e812
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-27
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-01
-
-    integration: Add tests
-
-commit be5c39a1cf6489ab0d58187ca59ef22d2204c97e
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-27
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-01
-
-    src: Add tests
-
-commit b8fda6808b2450e79f98bbdddfd4a27a79466e07
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-26
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-01
-
-    nghttpx: Cookie based session affinity
-
-commit e29b9c12615dcb370071045266fce080da350a50
-Merge: 77a41756 539e2781
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-31
+AuthorDate: 2017-12-02
 Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-10-31
+CommitDate: 2017-12-02
 
-    Merge pull request #1045 from nghttp2/nghttpx-sha1-fingerprint
+    Merge pull request #1082 from nghttp2/nghttpx-increase-api-max-request-body
     
-    Nghttpx sha1 fingerprint
+    nghttpx: Increase api-max-request-body
 
-commit 539e27812bc5620887e948aec716b168b01ffea8
+commit 2056e812bd6cbf3d4918d1d65d85cb02bde8220c
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-31
+AuthorDate: 2017-12-02
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-31
+CommitDate: 2017-12-02
 
-    nghttpx: Add tls_client_fingerprint_sha1 to mruby and accesslog
-    
-    Also tls_client_fingerprint is renamed to
-    tls_client_fingerprint_sha256.
+    nghttpx: Increase api-max-request-body
 
-commit 7008afd40ef604e6455b9615f1d81f95d00886fd
+commit 04348ff20e42db67a1819dda03f709e45985cdad
+Merge: d8e378fe 1ebb6810
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-31
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-31
-
-    nghttpx: Refactor get_x509_fingerprint to accept hash function
-
-commit 77a41756db62f479a1565c3f6f523678623aa5f8
-Merge: b15045d6 03084f75
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-30
+AuthorDate: 2017-12-01
 Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-10-30
+CommitDate: 2017-12-01
 
-    Merge pull request #1041 from nghttp2/fix-examples-client-server
+    Merge pull request #1081 from nghttp2/nghttpx-faster-parse-config
     
-    examples: Make client and server work with libevent-2.1.8
+    nghttpx: Faster configuration loading with lots of backends
 
-commit b15045d60e0077244ced90c578e53a5835d52566
-Merge: 86990db2 60baca27
+commit d8e378fea95780e66394dc9d471facbc7e891e34
+Merge: 2a694b27 a3ebeeaf
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
+AuthorDate: 2017-12-01
 Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-10-29
+CommitDate: 2017-12-01
 
-    Merge pull request #1040 from nghttp2/nghttpx-mruby-add-more-tls-vars
+    Merge pull request #1080 from nghttp2/nghttpx-fix-crash-with-backend-http-proxy-uri
     
-    nghttpx: Add more TLS related attributes to mruby Env object
+    nghttpx: Fix crash with --backend-http-proxy-uri option
 
-commit 03084f7517ee7b6cbfed2fac6cb5bcb4a4d64612
+commit 1ebb6810a1aca7ec641e602924fb2ecb90f59f51
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
+AuthorDate: 2017-12-01
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
+CommitDate: 2017-12-01
 
-    examples: Make client and server work with libevent-2.1.8
+    nghttpx: Faster configuration loading with lots of backends
 
-commit 60baca27e4f3c61408d269e939d6a703b7a30ff4
+commit 2a694b270a37806e3f7431b0f64949fdd047c559
+Merge: 97f1735c 422ad1be
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
-
-    nghttpx: Add more TLS related attributes to mruby Env object
-    
-    The added attributes are:
-    
-    * tls_cipher
-    * tls_protocol
-    * tls_session_id
-    * tls_session_reused
-    * alpn
-
-commit 86990db236d6183385746f2e9a838f07fee40d74
-Merge: f2b8edd1 cb376bcd
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
+AuthorDate: 2017-12-01
 Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-10-29
+CommitDate: 2017-12-01
 
-    Merge pull request #1038 from nghttp2/nghttpx-add-more-logging-vars
+    Merge pull request #1077 from nghttp2/refused-stream
     
-    nghttpx: Add client fingerprint and subject name to accesslog
+    Use NGHTTP2_REFUSED_STREAM for streams which are closed by GOAWAY
 
-commit cb376bcd80cf065e7bce676d86ff13410bb27db8
+commit a3ebeeafbab4c871a7856e2a6e4fdde497b24060
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
+AuthorDate: 2017-12-01
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
+CommitDate: 2017-12-01
 
-    nghttpx: Add client fingerprint and subject name to accesslog
+    nghttpx: Fix crash with --backend-http-proxy-uri option
 
-commit f2b8edd1e25331496c957abfe1a76bf2065b781b
+commit 422ad1be3253fb263a70b159e2e85d803f8a2d85
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
+AuthorDate: 2017-11-30
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
+CommitDate: 2017-11-30
 
-    nghttpx: Fix memory leak
-
-commit c4f8afcfde51df0277f29380fc53e1de8ab42bdc
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
-
-    nghttpx: Get TLS info only when it is necessary when writing accesslog
-
-commit 1a1a216d5a1695d4ad076b44e6f6e88951ed68e7
-Merge: c573c80b 9f80a82c
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-10-29
-
-    Merge pull request #1037 from nghttp2/nghttpx-mruby-tls-client-vars
+    Use NGHTTP2_REFUSED_STREAM for streams which are closed by GOAWAY
     
-    nghttpx: Add client fingerprint and subject name to mruby env
+    The error code NGHTTP2_REFUSED_STREAM is passed to
+    nghttp2_on_stream_close callback when a stream is closed because its
+    stream ID is strictly larger than incoming or outgoing GOAWAY.
 
-commit 9f80a82c1a8120b0dc710fd5b471fb5c3444efee
+commit 97f1735cf5a15ae107aeed9bbf8d06ad7dc5a3c2
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
+AuthorDate: 2017-11-25
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
+CommitDate: 2017-11-25
 
-    nghttpx: Add client fingerprint and subject name to mruby env
-
-commit c573c80bd31277e362b72c545595563489998060
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
-
-    nghttpx: Pass a pointer to SSL instead of TLSSessionInfo to LogSpec
-
-commit 3cd6817e219aeeb27c0a3a5147bdd4f137ebcab6
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
-
-    Fix typos
-
-commit d4a69658a180cf2cbb0280aa9b04abb875d84d77
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
-
-    Add another warning about mruby
-
-commit 8e06fe4971dcd43d48fd17c769049e38fa17cd7d
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
-
-    Fix typo
-
-commit aaeeec8f1c7e3dc326829128f6141c1db16fe663
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-28
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-28
-
-    Fix typos
-
-commit 66d5e24606387188fb6323796deb73610c650252
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-25
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-25
-
-    Bump up version number to 1.28.0-DEV
+    Bump up version number to 1.29.0
