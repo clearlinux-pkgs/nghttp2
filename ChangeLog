@@ -1,500 +1,1522 @@
-commit 939ad5ddbeeb153c6df23ddfb33b0e9b299708a5 (HEAD, tag: v1.28.0, origin/master, origin/HEAD, master)
+commit d1f9f9a3aa2c7208ddc3b4e4b0964099c4b57a3e (HEAD, tag: v1.8.0, origin/master, origin/HEAD, master)
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-25
+AuthorDate: 2016-02-26
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-25
+CommitDate: 2016-02-26
 
-    Update manual pages
+    makerelease.sh: Add autoreconf
 
-commit 24d92b979d36ebe82b24c831265ea1352a1aa0ff
+commit 2415a227571671636c7d678ca47c5d74ccf7f9ef
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-25
+AuthorDate: 2016-02-26
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-25
+CommitDate: 2016-02-26
 
-    Add deprecation warning when spdylay support is enabled
+    h2load: Fix uninitialized fields
 
-commit 4c92ff1843328a97f9b51ed71513048159bff81c
+commit 887d4d2a4149e41155053e78f5e782b315c02c1c
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-25
+AuthorDate: 2016-02-25
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-25
+CommitDate: 2016-02-25
 
-    Bump up version number to 1.28.0, LT revision to 29:0:15
+    Update bash_completion
 
-commit 280db5c6baaae64fdf259803ee170e9f4d280b21
+commit 1c8e625045b7cf5fb2d7753ab1b73d34e8b18676
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-25
+AuthorDate: 2016-02-25
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-25
+CommitDate: 2016-02-25
 
-    Update neverbleed
+    Update man pages
 
-commit 7fbcb2d0053a6dcd0af641e2fcc7e6c3a70e5bab
-Merge: ff200bfc 53aeb2c3
+commit 36e931e0d72209459fdb8c03299567c797d5741d
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-24
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-11-24
+AuthorDate: 2016-02-25
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-25
 
-    Merge pull request #1074 from nghttp2/fix-doc
+    Bump up version number to 1.8.0, LT revision to 19:0:5
+
+commit 31d4077638078cc8b65fa1c09fa43b1755a2f340
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-25
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-25
+
+    Remove files copied in the rule for apiref.rst target
+
+commit c098b4ac70a14f9d35c1a0f2bb76fbe63f25fb4f
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-25
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-25
+
+    nghttpx: Remove --backend-tls-session-cache-per-worker option
+
+commit 32446a519798657746b0ed12eef6c1c8b35bc9d5
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-25
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-25
+
+    Revert "Update doc"
     
-    Fix doc
+    This reverts commit 8aac5d6af2e081644baa74f3eb16ed234a990e17.
 
-commit 53aeb2c3d7f080a5015818699afecc8eba62f171
+commit 40c1b29f36aa653ffb8be1bd0f88ada3c05d89f7
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-24
+AuthorDate: 2016-02-25
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-24
+CommitDate: 2016-02-25
 
-    Fix doc
+    Handle extension frame in session_inbound_frame_reset
 
-commit ff200bfcf34044d364714d45f2227bb5dab55171
+commit bc933e998154a1f8b536a444016ce8fbda149a54
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-23
+AuthorDate: 2016-02-25
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-23
+CommitDate: 2016-02-25
 
-    clang-format-5.0
+    src: Use lowercase to show it is not the name of frame
 
-commit fee3151fd2fa5e017cda1d7eec21750f8672e344
+commit ba34e911e1ab1313865ddec149d0ea0ee0c9a6a8
+Merge: 2782ef6 8aac5d6
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-23
+AuthorDate: 2016-02-25
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-23
+CommitDate: 2016-02-25
 
-    Switch to clang-format-5.0
+    Merge branch 'simple-extensions'
 
-commit 99a85159ae2e4d2bacfd8d2b305f7caeb31e69eb
+commit 8aac5d6af2e081644baa74f3eb16ed234a990e17
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-21
+AuthorDate: 2016-02-25
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-21
+CommitDate: 2016-02-25
 
-    Update manual pages
+    Update doc
 
-commit 2a981a3f566f24b8f7127ea93f51ddce2d376563
-Merge: ee8bfddf 0028275d
+commit 56bdfd1df20116ecd756a070f13fba2d0336889f
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-21
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-11-21
+AuthorDate: 2016-02-25
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-25
 
-    Merge pull request #1066 from nghttp2/nghttpx-add-affinity-cookie-secure
+    Revert "Handle extension frame in session_inbound_frame_reset"
     
-    nghttpx: Add affinity-cookie-secure parameter to backend option
+    This reverts commit dbffb8995b3624484e3567bcd639d4af7daf7f34.
 
-commit 0028275d7bd0028ef53b594afe54b6282ffdfa4f
+commit dbffb8995b3624484e3567bcd639d4af7daf7f34
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-21
+AuthorDate: 2016-02-25
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-21
+CommitDate: 2016-02-25
 
-    nghttpx: Add affinity-cookie-secure parameter to backend option
+    Handle extension frame in session_inbound_frame_reset
 
-commit ee8bfddfc93625d555837ad6623b95ef46e1981f
-Merge: 73344ae9 194acb1f
+commit ebfae904abb47cea04b357b0a7570164b4483c45
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-21
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-11-21
-
-    Merge pull request #1063 from nghttp2/error_callback2
-    
-    Error callback2
-
-commit 194acb1f2c838ba9ed8b75b3348120650491db6a
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-19
+AuthorDate: 2016-02-25
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-19
-
-    src: Use nghttp2_error_callback2
-
-commit 43a2a70ae7cd5bbc8a6c9b9f8a9e525924c74782
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-19
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-19
-
-    Add nghttp2_error_callback2
-    
-    nghttp2_error_callback2 is an extended version of the existing
-    nghttp2_error_callback by adding error code parameter.  This
-    deprecates nghttp2_error_callback.
-
-commit 73344ae9aa1e73e2045d2b48a4d2e3a3a62738e5
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-17
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-17
-
-    nghttpx: Use plain hex string format for client serial
-
-commit c479f6122fc60ab6988e8fd2a9db6fcbb1cdcefb
-Merge: d402cfdf eca0a302
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-16
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-11-16
-
-    Merge pull request #1060 from nghttp2/nghttpx-add-client-serial
-    
-    Nghttpx add client serial
-
-commit eca0a3025bcc3f64e0e51aee9e69971b941008c4
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-16
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-16
-
-    nghttpx: Add $tls_client_serial log variable
-
-commit 4720c5cb3d47fd84b855b4758fc37145cef0a39d
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-16
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-16
-
-    nghttpx: Make client serial available in mruby script
-
-commit cd55ab28abb8c6cad06a70bd7fadd4389a3978b8
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-16
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-16
-
-    nghttpx: Add function to get serial number from certificate
-
-commit d402cfdf1607d6f94a4029752fd949ee1da30bb9
-Merge: 05e1fd5e 22502182
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-16
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-11-16
-
-    Merge pull request #1057 from nghttp2/nghttpx-add-tls-client-issuer-name
-    
-    Add tls_client_issuer_name log variable and expose it to mruby
-
-commit 22502182d0cb3472ba9f1b4624765aee13e186e0
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-15
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-15
-
-    Add tls_client_issuer_name log variable and expose it to mruby
-
-commit 05e1fd5e772c5e5f6c1b12fc94f3bd0fca3e5a84
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-04
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-04
-
-    Update manual pages
-
-commit 943d7923f9d1a955f6c23a3f50b6a8767a236461
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-04
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-04
-
-    Add Session Affinity section to nghttpx howto
-
-commit 568ecbfb28dacb5734c41582c8f189aebc779f11
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-04
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-04
-
-    doc: Add missing port
-
-commit f5ddd7f43bd44fa34e0027fed5cbbe7774d794f6
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-04
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-04
-
-    nghttpx: Make initial_addr_idx_ unsigned
-
-commit 88abbce7e795f19963edc7a6ec52a0dd3d0f6310
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-04
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-04
-
-    nghttpx: Fix compile error with gcc
-
-commit 16e9036568d9c53aae0e9580571cfe6f693b10e1
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-04
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-04
-
-    nghttpx: Fix affinity retry
-
-commit fa7945c6271fb31dcceffb66cd4bf0d8ee1fd249
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-04
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-04
-
-    nghttpx: Refactor
-
-commit daca43f0ddc885052dcbda187bd1c32818fec680
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-04
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-04
-
-    nghttpx: Fix stalled backend connection on retry
-
-commit 16bc11e6700e769c5a2ee2fa9e0c3c379cee0ab8
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-04
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-04
-
-    nghttpx: Remove duplicated util::make_socket_nodelay
-
-commit 6f7e94cdba813f28f8dafc72de68e1457b9f0cfc
-Merge: 8c0ea56b 61efa15a
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-03
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-11-03
-
-    Merge pull request #1047 from PiotrSikora/go_vet
-    
-    integration: Fix issues reported by the `go vet` tool.
-
-commit 61efa15a14d95c6cfdf819b6eb6b8df05995eb29
-Author:     Piotr Sikora <piotrsikora@google.com>
-AuthorDate: 2017-11-02
-Commit:     Piotr Sikora <piotrsikora@google.com>
-CommitDate: 2017-11-02
-
-    integration: Fix issues reported by the `go vet` tool.
-    
-    Signed-off-by: Piotr Sikora <piotrsikora@google.com>
-
-commit 8c0ea56bb81eb11fb1d77b9aecfc3f2ed2a13cf9
-Merge: 54905371 6010d393
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-01
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-11-01
-
-    Merge pull request #1036 from nghttp2/nghttpx-affinity-cookie
-    
-    nghttpx: Cookie based session affinity
-
-commit 549053710b2fc2c02269d598929293edd4392698
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-01
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-01
-
-    nghttpx: Refactor
-
-commit 6010d39325e74505503177e56a25787f18ec8b19
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-27
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-01
-
-    integration: Add tests
-
-commit be5c39a1cf6489ab0d58187ca59ef22d2204c97e
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-27
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-01
-
-    src: Add tests
-
-commit b8fda6808b2450e79f98bbdddfd4a27a79466e07
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-26
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-01
-
-    nghttpx: Cookie based session affinity
-
-commit e29b9c12615dcb370071045266fce080da350a50
-Merge: 77a41756 539e2781
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-31
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-10-31
-
-    Merge pull request #1045 from nghttp2/nghttpx-sha1-fingerprint
-    
-    Nghttpx sha1 fingerprint
-
-commit 539e27812bc5620887e948aec716b168b01ffea8
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-31
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-31
-
-    nghttpx: Add tls_client_fingerprint_sha1 to mruby and accesslog
-    
-    Also tls_client_fingerprint is renamed to
-    tls_client_fingerprint_sha256.
-
-commit 7008afd40ef604e6455b9615f1d81f95d00886fd
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-31
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-31
-
-    nghttpx: Refactor get_x509_fingerprint to accept hash function
-
-commit 77a41756db62f479a1565c3f6f523678623aa5f8
-Merge: b15045d6 03084f75
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-30
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-10-30
-
-    Merge pull request #1041 from nghttp2/fix-examples-client-server
-    
-    examples: Make client and server work with libevent-2.1.8
-
-commit b15045d60e0077244ced90c578e53a5835d52566
-Merge: 86990db2 60baca27
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-10-29
-
-    Merge pull request #1040 from nghttp2/nghttpx-mruby-add-more-tls-vars
-    
-    nghttpx: Add more TLS related attributes to mruby Env object
-
-commit 03084f7517ee7b6cbfed2fac6cb5bcb4a4d64612
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
-
-    examples: Make client and server work with libevent-2.1.8
-
-commit 60baca27e4f3c61408d269e939d6a703b7a30ff4
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
-
-    nghttpx: Add more TLS related attributes to mruby Env object
-    
-    The added attributes are:
-    
-    * tls_cipher
-    * tls_protocol
-    * tls_session_id
-    * tls_session_reused
-    * alpn
-
-commit 86990db236d6183385746f2e9a838f07fee40d74
-Merge: f2b8edd1 cb376bcd
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-10-29
-
-    Merge pull request #1038 from nghttp2/nghttpx-add-more-logging-vars
-    
-    nghttpx: Add client fingerprint and subject name to accesslog
-
-commit cb376bcd80cf065e7bce676d86ff13410bb27db8
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
-
-    nghttpx: Add client fingerprint and subject name to accesslog
-
-commit f2b8edd1e25331496c957abfe1a76bf2065b781b
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
-
-    nghttpx: Fix memory leak
-
-commit c4f8afcfde51df0277f29380fc53e1de8ab42bdc
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
-
-    nghttpx: Get TLS info only when it is necessary when writing accesslog
-
-commit 1a1a216d5a1695d4ad076b44e6f6e88951ed68e7
-Merge: c573c80b 9f80a82c
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-10-29
-
-    Merge pull request #1037 from nghttp2/nghttpx-mruby-tls-client-vars
-    
-    nghttpx: Add client fingerprint and subject name to mruby env
-
-commit 9f80a82c1a8120b0dc710fd5b471fb5c3444efee
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
-
-    nghttpx: Add client fingerprint and subject name to mruby env
-
-commit c573c80bd31277e362b72c545595563489998060
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
-
-    nghttpx: Pass a pointer to SSL instead of TLSSessionInfo to LogSpec
-
-commit 3cd6817e219aeeb27c0a3a5147bdd4f137ebcab6
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
-
-    Fix typos
-
-commit d4a69658a180cf2cbb0280aa9b04abb875d84d77
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
-
-    Add another warning about mruby
-
-commit 8e06fe4971dcd43d48fd17c769049e38fa17cd7d
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-29
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-29
+CommitDate: 2016-02-25
 
     Fix typo
 
-commit aaeeec8f1c7e3dc326829128f6141c1db16fe663
+commit 827abb57e98ad624abccbb8f05e22217119e81e8
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-28
+AuthorDate: 2016-02-24
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-28
+CommitDate: 2016-02-24
 
-    Fix typos
+    Simplified bitfield calculation of extension frame
 
-commit 66d5e24606387188fb6323796deb73610c650252
+commit 9aee43f7d8378895db32f34951a86586baac1793
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-10-25
+AuthorDate: 2016-02-24
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-10-25
+CommitDate: 2016-02-24
 
-    Bump up version number to 1.28.0-DEV
+    Update doc for extension frames
+
+commit 34bf1536533a9a65604ddf92b690faa2d0f209d8
+Merge: 304ff6a 2782ef6
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-24
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-24
+
+    Merge branch 'master' into simple-extensions
+
+commit 2782ef67de9ba332bcc8454d3afd5b0914a6f94c
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-23
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-23
+
+    nghttpd: Remove unused function
+
+commit 9d15f9b00d3c36709d287a9a17fa6f3351839733
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-23
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-23
+
+    nghttpd: Start SETTINGS timer after it is written to output buffer
+
+commit 3e72711e23cdaecdb3d82fa7efbb508e8ef1ead0
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-23
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-23
+
+    Cap 100 limit for remembering idle streams
+
+commit f4bb8776d0880650a8e8187790cd040630e090c7
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-23
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-23
+
+    mruby: Clean up mrbgems as well
+
+commit 95ffb4565f7c8b56812f110f6a8dde6e131755cf
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-21
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-21
+
+    Update nghttpx documentation
+
+commit f3a415f6234818e66053dcfe621708d121101aaf
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-21
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-21
+
+    Update nghttpx documentation
+
+commit 936d4aca1abf52cea9ce445da5dd4cbd734f9be7
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-21
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-21
+
+    Update h2load documentation
+
+commit 216ae0a328b4e9a51b022ff42aaf10a3c72fdc2d
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-21
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-21
+
+    Update nghttpx documentation
+
+commit 9672bc322f5fe744bdd0102a92bec7b34ed71490
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-21
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-21
+
+    src: Remove unused functions
+
+commit b68be1e1fb5b3f29fc531626279d2a64601918a1
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-21
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-21
+
+    src: Make token of type int32_t; we have no reason to use int16_t
+
+commit f2a72757001e56d9dfc3a1fb85ca7aeeac4818a1
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-21
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-21
+
+    nghttpx: Cache TLS session inside DownstreamAddr object
+
+commit 177d0a513f3f7e10ec08444404aceb124afede66
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-21
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-21
+
+    nghttpx: More logging for backend connection initiation
+
+commit dfc02843b6342d9c6617bcd2bb1ebe424683aedb
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-21
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-21
+
+    src: Rename and rewrite numeric_hostport as to_numeric_addr and support AF_UNIX path
+
+commit 11c8803b92504eaff42550a174532f9a5459e756
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-21
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-21
+
+    nghttpx: Worker wide blocker which is used when socket(2) is failed
+
+commit c9a4f293a11be14c1fcc4b7ce58ee617b53da947
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-21
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-21
+
+    nghttpx: ConnectBlocker per backend address
+
+commit 61579ad20ff965eb7df80b55a412282766e0110e
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-20
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-20
+
+    nghttpx: Use StringRef for shrpx::add_header
+
+commit 9678daa46aa72f7abc698822ea6d930665b0d612
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-20
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-20
+
+    nghttpx: Rename index_headers() as parse_content_length()
+
+commit 23ecfd412d5f4143be50243fbbad81c865d0c302
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-20
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-20
+
+    nghttpx: Fix mruby compile error, clean up add_header interface
+
+commit 3ff148811b54380f56a14d97d69cac2f2b722471
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-20
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-20
+
+    nghttpx: Use StringRef for add_hedeader
+
+commit 6f1347fc8b19b6419d19a55587651330fe02116b
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-20
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-20
+
+    nghttpx: Tokenize trailer field as well so that we can ditch prohibited headers in HTTP/2
+
+commit 17032010845f257a830ec6ba07961c5e75527d5b
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-20
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-20
+
+    nghttpx: Get rid of hdidx
+
+commit 7921029e33b6270b488e391fc5e860b5cd36194b
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-20
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-20
+
+    Tokenize extra HTTP header fields
+    
+    The extra HTTP header fields are compiled from
+    https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers,
+    https://en.wikipedia.org/wiki/List_of_HTTP_header_fields, and
+    https://www.owasp.org/index.php/List_of_useful_HTTP_headers.
+
+commit b7159f80b20432d510d43d9c8b57cf3f2b39159b
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-18
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-18
+
+    Eliminate the possibility of nghttp2_stream.cycle overflow
+
+commit f0b5a8db8c50e03bde30be96ed6172e220533411
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-17
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-17
+
+    Add unistd.h to test initgroups() declaration
+
+commit 094168a58fdfddf56572f081f7538f4b16fcb642
+Merge: 02b7116 63e43bf
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-16
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-16
+
+    Merge branch 'Lekensteyn-tests-fixes'
+
+commit 63e43bff9983ed95fa3953950aeeff6e8e627457
+Author:     Peter Wu <peter@lekensteyn.nl>
+AuthorDate: 2016-02-15
+Commit:     Peter Wu <peter@lekensteyn.nl>
+CommitDate: 2016-02-15
+
+    tests: remove unused macros
+    
+    Since v0.6.2-7-g1d138ac ("Unify DATA and other frames in
+    nghttp2_outbound_item and save malloc()"), the macros are unused and the
+    builds fails on -Werror=unused-macros.
+
+commit 02b7116d427f6a10e55dd4c041c94d2e42fec215
+Merge: 47106c0 aa3373a
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    Merge branch 'nghttpx-replace-unique-ptr-char-with-immutable-string'
+
+commit aa3373a107a2e9a96afe10929db4773a88745f90
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Use ImmutableString for mruby_file
+
+commit 7aabc6b125279fea2a60c23f329651fe5a323a58
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Use ImmutableString for user
+
+commit 466e4b7a1e171b7b183922b7e8a27a61ca3a293d
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Use ImmutableString for conf_path
+
+commit 76a425226ffcfdd88d8b0009b2cd847fc16e65e2
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Use ImmutableString for pid_file
+
+commit 2b707bff27dc377ef8f0a8d60ffc4c09edadf815
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Use ImmutableString for log file
+
+commit 9055323b67590adb4cbb941adddc05fddefd1dd2
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Use ImmutableString for request_header_file and response_header_file
+
+commit 67804cfc8c4818953dbcaf5ed5d17d49692d5ff3
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Use ImmutableString for ciphers
+
+commit 2344932b45e5b22b37651ab2b432f0bb2504ba06
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Use ImmutableString for dh_param_file
+
+commit 35ebdd35bc6bb9ccc98686fb8b432db181d2ae84
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Use ImmutableString for private_key_file
+
+commit ac81003669deb40ede9b5559b9c832b43a787d71
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Use ImmutableString for cert_file
+
+commit c999987baf2b4c0a53bbab4ce50ed00f2cb3e66f
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Use ImmutableString for private_key_file
+
+commit 529a59d309f40c9e0570a6c2be6332b182b53826
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Use ImmutableString for tls.client_verify.cacert
+
+commit 52f641781321f15453bd0d890a3db25e5bf96c3e
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Use ImmutableString for tls.cacert
+
+commit 660bc389e6f8276fe0b508f890f3e3ce4567fbd5
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Use ImmutableString for fetch_ocsp_response_file
+
+commit bfc26e82997aa86460eedd182abc1a3814d5d107
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Use ImmutableString to store memcached server host
+
+commit 47106c075630d00477abc9988596a711d0e112e5
+Merge: 1bd98dc 49fa914
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    Merge branch 'nghttpx-refactor-downstream-addr-group'
+
+commit 49fa914db5cbf74708e025f9aeae74f9a79f2ab1
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Use StringRef for string parameters in match_downstream_addr_group
+
+commit 93eabc642b9732a5172b5b2eaf104320d46fa68d
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Use StringRef for parameter in Router::match
+
+commit 2d273f82375b527b081bf1e3b2fd60a6024c30de
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Use StringRef for pattern paramter in Router::add_route
+
+commit a53f0f0a17ecf86dbb09f6e7a0d397f5cfda2431
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Refactor DownstreamAddrGroup and router API
+
+commit 1bd98dcf4febfc43544c4c193d2f114a266f737f
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Remove user defined ctor/assignment op from DownstreamAddr
+
+commit eebed206c91690032bfc7102144aadc295a59f19
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    Add Architecture doc
+
+commit fe74600a5f4dfcce2f6979d2cd62f388f97426fa
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    List all contributors in AUTHORS
+
+commit 08e2d7cdb38f6de3a4f0b83b237c90f957ddad5f
+Merge: 093eb51 2593036
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    Merge branch 'Lekensteyn-build-fixes'
+
+commit 25930360537a201674fa6aa5b3ff93a948f11237
+Author:     Peter Wu <peter@lekensteyn.nl>
+AuthorDate: 2016-02-13
+Commit:     Peter Wu <peter@lekensteyn.nl>
+CommitDate: 2016-02-13
+
+    integration-tests: support out-of-tree tests
+    
+    `go test` requires both config.go and the test files in the same
+    directory. For out-of-tree builds, config.go is normally not placed next
+    to the source files, so copy the tests to the build directory as a
+    workaround.
+
+commit a6effb4d23137be7204bbaeff159344f51a04649
+Author:     Peter Wu <peter@lekensteyn.nl>
+AuthorDate: 2016-02-13
+Commit:     Peter Wu <peter@lekensteyn.nl>
+CommitDate: 2016-02-13
+
+    doc: fix out-of-tree doc builds
+    
+    Fixes multiple errors while making docs:
+    
+        Could not import extension sphinxcontrib.rubydomain (exception: No module named 'sphinxcontrib')
+    
+    and
+    
+        ../../doc/sources/index.rst:15: WARNING: toctree contains reference to nonexisting document 'nghttp.1'
+        ../../doc/sources/index.rst:15: WARNING: toctree contains reference to nonexisting document 'nghttpd.1'
+        ../../doc/sources/index.rst:15: WARNING: toctree contains reference to nonexisting document 'nghttpx.1'
+        ../../doc/sources/index.rst:15: WARNING: toctree contains reference to nonexisting document 'h2load.1'
+        ../../doc/sources/index.rst:15: WARNING: toctree contains reference to nonexisting document 'programmers-guide'
+
+commit 17215002a16dafe48c4f8536c046839d56eabc86
+Author:     Peter Wu <peter@lekensteyn.nl>
+AuthorDate: 2016-02-12
+Commit:     Peter Wu <peter@lekensteyn.nl>
+CommitDate: 2016-02-13
+
+    examples: fix compile warnings
+    
+    Fixes the following two warnings:
+    
+        examples/client.c:292:0: error: macro "MAX_OUTLEN" is not used [-Werror=unused-macros]
+        examples/tiny-nghttpd.c:298:13: error: function declaration isn’t a prototype [-Werror=strict-prototypes]
+    
+    Caught using cmake as the autoconf check fails due to unused macros
+    (HAVE_xxx in conftest.c) and a main function without parameters
+    respectively.
+
+commit 0e469ed221deff669155011acd5d8e954715b1d2
+Author:     Peter Wu <peter@lekensteyn.nl>
+AuthorDate: 2016-02-11
+Commit:     Peter Wu <peter@lekensteyn.nl>
+CommitDate: 2016-02-13
+
+    Fix typo in HAVE_CONFIG_H name
+    
+    Only used by lib/nghttp2_npn.c where the presence of config.h does not
+    seem to make a difference though.
+
+commit 093eb51f8c71e077583d20ab6dcdcfc539ec7b82
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    Update default cipher list
+
+commit 5f1866fd6be9b32e58c8c6d59e51ac83a06819fc
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    Update man pages
+
+commit d8c8a4631d045e6a8c3b8e33f840fdf105c2696b
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    nghttpx: Interleave text/html pushed resources with associated resource
+
+commit 6b12f17f44c6c879cf7bb18040f91de885ffcd2f
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-14
+
+    Wrap AM_PATH_XML2 by m4_ifdef to handle the case when AM_PATH_XML2 is not found
+
+commit eb0c82d91f3962d2a57a8ac5462f618808f520a3
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-13
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-13
+
+    nghttpx: More log output when resolving addresses for better debugging
+
+commit 7adfa5dea7e0444635354b35eb47fcc4c58f2da1
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-13
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-13
+
+    Add note about --enable-app automatic behaviour
+
+commit 17758126fa1d0e086427f364041e60155706f776
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-13
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-13
+
+    nghttpx: Add headers given in add-response-headers for mruby response
+
+commit b440f585bcf6774ae32e643904b937c377b4cc37
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-13
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-13
+
+    nghttpx: Use Header to store custom request/response header fields
+
+commit 63a13ccb183cf34cc0909d4425f7ab3441456781
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-13
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-13
+
+    src: Add constexpr to StringRef ctors
+
+commit 72877379ec2d81a8f2eec2440732c22bd3a39ecb
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-13
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-13
+
+    nghttpx: Deprecate --backend-ipv4 and --backend-ipv6 in favor of --backend-address-family
+
+commit 84499584258e1f82e03117c4edf261389cc6e604
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-13
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-13
+
+    doc: Mention encryption for memcached connections
+
+commit 9037641592cf1ae7c5eaf934763b348b4561e8cb
+Merge: 1e150bc c0078ab
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-13
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-13
+
+    Merge branch 'nghttpx-memcached-tls'
+
+commit c0078ab45a3b1889672eef94ec2d03e0d5531825
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-13
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-13
+
+    nghttpx: Add options to specify address family of memcached connections
+
+commit 3a41e4dd1a029ff3254fde29d58d17f90459344a
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-13
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-13
+
+    nghttpx: Add encryption support for TLS ticket key retrieval
+
+commit 3297a303bfc0320a24da137616ff17213119b891
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-13
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-13
+
+    nghttpx: Add client auth options for session cache memcached TLS connection
+
+commit f1580f95d43552091576394be6536dc09197cd82
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-11
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-13
+
+    nghttpx: Add TLS support for session cache memcached connection
+
+commit 1e150bcf616717e3697591644b7b0b5595344b32
+Merge: 61dda40 ca371e3
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-13
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-13
+
+    Merge branch 'jay-refactor-blacklist'
+
+commit ca371e3ba9a6cd0617207a0fc912d0635c1fbbdf
+Author:     Jay Satiro <raysatiro@yahoo.com>
+AuthorDate: 2016-02-12
+Commit:     Jay Satiro <raysatiro@yahoo.com>
+CommitDate: 2016-02-12
+
+    nghttpx: Refactor blacklisted cipher suite check
+
+commit 61dda40b44c5cf010fb933138a5e1c7aefb61611
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-12
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-12
+
+    Don't pass NULL to memcpy
+
+commit 5ad753b90cb117a6378d7c78b2538f7b244d1a93
+Merge: 28b643e 0a1beea
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-11
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-11
+
+    Merge branch 'limit-incoming-headers'
+
+commit 0a1beea13a8609ee7013f4200283664aac10c138
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-10
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-11
+
+    asio: client: Limit incoming response header field buffer size
+
+commit 00e722f02cfaf2d5dd6759730c96614ced89da9f
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-04
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-11
+
+    Add warning
+
+commit ff22862b9dcdcf94a66bd7e5a521d357ac3d43ab
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-04
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-11
+
+    nghttp: Limit incoming header field buffer
+
+commit b2264ad57e0e46e872d9213fae7a68b755745af6
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-04
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-11
+
+    asio: server: Limit incoming request header field buffer size
+
+commit b0227d40517cc3eddfd4f585297f2f7aa1f500fd
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-04
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-11
+
+    nghttpd: Limit request header buffer
+
+commit 28b643e531628e02149dc1f6085a220eda9ebfc5
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-11
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-11
+
+    Fix configure script for non-gcc, clang build
+
+commit 82f942c3a382f35bebdbf2134459e3935f54460c
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-11
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-11
+
+    nghttpx: Parameterize configuration values for client side TLS context
+
+commit e4a727f86c0e1ef3f8d766b740bbf7bcdfb837d4
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-11
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-11
+
+    nghttpx: Cache TLS client session after initial handshake was done
+
+commit b624ca6dcdfa0edc5f14e5d35d752c33bde8b88d
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-11
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-11
+
+    nghttpx: Rename client TLS session cache field
+
+commit ba4c268172bd679cccc99fe43d921990e1bb6738
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-11
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-11
+
+    nghttpx: Single SSL_SESSION cache entry for each address
+
+commit 00175eac3369819ff3ff77ecb4ca9412c1fc8929
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-11
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-11
+
+    nghttpx: Use Address* as a key for client side session cache
+
+commit 396dde134762c5598c8145e817614d46a5539427
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-10
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-10
+
+    Mention libspdylay-dev package availability
+
+commit 042a59117d58a3482b322ecc2aa6caed1e80a03a
+Merge: c3a5fe7 b871720
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-10
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-10
+
+    Merge pull request #504 from davidjb/master
+    
+    Document compiling apps and include h2load in configure
+
+commit b8717208c70fc2ba1be0382d653e676e05c9aeb6
+Author:     David Beitey <david@davidjb.com>
+AuthorDate: 2016-02-09
+Commit:     David Beitey <david@davidjb.com>
+CommitDate: 2016-02-10
+
+    Document compiling apps and include h2load in configure
+
+commit c3a5fe71856d4f5aa75c7efbfa5ce789f4c294a3
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    Update bash_completion
+
+commit c8b6a79225eb98676e84148aa47008580d4fc352
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    Update man pages
+
+commit 92e66fc167abac7bf003cf95012fe711edaedee4
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    Bump up version number to 1.8.0-DEV
+
+commit 64ffc1fc732f0aaa6de2490dff85365aba148b16
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    Update README.rst
+
+commit 304ff6a6f98c7437a5a7f31d14f6db4991290f7d
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    Don't send extension frame in closing state
+
+commit fc39f2d9d2d42401b1c2f64f217f084a93d3e4f3
+Merge: e14da85 0d80697
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    Merge branch 'master' into simple-extensions
+
+commit 0d806978e613c90ed3bea9c451f803eb220d2850
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    nghttpx: Set HTTP/1 backend read buffer to 16k
+
+commit 62c43ce2bee968b7e7445b4dfe5f5b428fac2903
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    nghttpx: Remove rb_ from HTTP/2 backend session
+
+commit 88eaeb5d1c52f32e04a5d10c0a10300e3bd292b2
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    nghttpx: Use memchunks for HTTP/2 backend
+
+commit 60c0c2dd565e4b6865c40334ded90b0bdeb71d41
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    src: Code cleanup
+
+commit 6c147aa1c5f100b81cbebf275edaed6cf2730cc6
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    nghttpx: Remove unnecessary condition
+
+commit 2a9b23bfab71d8bf25cacd71cddaa61f94c6a3a4
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    nghttpx: Store pointer to DownstreamAddr
+
+commit 4fb4617d2032385f6fa703e748a4c8ba549cd5c9
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    src: Parameterize CharT
+
+commit ede0f6aa324be545f3c2b927fec5c2b9ba1f8cf9
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    src: Remove verbose const
+
+commit 4e7271a88ff1e86ddbea52ff887c72b513889adf
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    nghttpx: Fix regression which breaks WebSocket upgrade
+
+commit 6d49110a33b4a890e1f7a9762e86163506c3b934
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    Rename FrontendAddr as UpstreamAddr
+
+commit b540aa34d08c3367a5ef9a8541accf7a3aa3660a
+Merge: 344cc1b 15fa38c
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    Merge branch 'nghttpx-backend-h1-tls'
+
+commit 15fa38c72fc9ad3bd960223839ad80484cf68750
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    nghttpx: Rename backend_session_cache_per_worker as downstream_session_cache_per_worker
+
+commit e7de5e9f6cc95b4d7508da26a671e8f0f383ed9d
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    nghttpx: Rename cl_tls_session as downstream_tls_session
+
+commit 5c10534b88ce473f14b374376783ae27adb5004a
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    nghttpx: Fix crash when reusing cached SSL session
+
+commit b3e5d49a3ebabc11a7da2f9f6fb66f722e86e944
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    Update doc
+
+commit 6806196404a9961bfff8e4be1b3d0062078b5be0
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    nghttpx: Update doc for HTTP/1 TLS backend connections
+
+commit 2e38208d74734c7eede1067a1f0dfd82e4107f10
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    nghttpx: Fixups for HTTP/1 backend TLS support
+
+commit cde79052ddcb0b55fcbb2e3cbaf6427398d57de3
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    nghttpx: Slightly faster version of HTTP/1 backend
+
+commit e763770f3e170ac27de461e636e5334740463603
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    nghttpx: Add option to specify maximum number of session cache
+
+commit 26d49c1dc39ea0f22d23eb6a1b62ea79f0e6cd5a
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-06
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    nghttpx: Cache client session
+
+commit bb4e2f6a2462f087c8452f082f08de7a2971185a
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-06
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    nghttpx: Add TLS support for HTTP/1 backend
+
+commit 344cc1b5c356401577fa9faeca530e7fe332e0fd
+Merge: 024d0d0 21f9b6d
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    Merge branch 'Sp1l-master'
+
+commit 21f9b6d8bb6e09fe1fc9ec7a1cde0b775fb9d581
+Merge: 024d0d0 e4b2847
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-07
+
+    Merge branch 'master' of https://github.com/Sp1l/nghttp2 into Sp1l-master
+
+commit 024d0d09ee14e2527b77cd0688d9d3d46a548f6a
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-06
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-06
+
+    nghttpx: Fix unexpected failure due to missing address family
+
+commit e4b2847d3135a024c740d25f9e11da7ff0bf0fd6
+Author:     Bernard Spil <Sp1l@users.noreply.github.com>
+AuthorDate: 2016-02-06
+Commit:     Bernard Spil <Sp1l@users.noreply.github.com>
+CommitDate: 2016-02-06
+
+    Don't check for dlopen/libdl on *BSD
+    
+    This makes linking fail on -ldl as there is no libdl on in /usr/lib or /usr/local/lib on *BSD
+    Tested (and part of the proposed nghttp2 1.7.0) on [https://reviews.freebsd.org/D5218|FreeBSD]
+
+commit ee076947833f3d5664cc2196c493f451559bc7e1
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-06
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-06
+
+    nghttpx: Add request-header-field-buffer and max-request-header-fields options
+    
+    This commit adds request-header-field-buffer and
+    max-request-header-fields, and deprecates header-field-buffer and
+    max-header-fields options.
+
+commit 8741503db165dc3edb50a20d8158def53b600a5f
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-06
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-06
+
+    nghttpx: Add --no-http2-cipher-black-list to allow black listed cipher suite
+
+commit eec409dba720ff3407989dd179f3f118bf53e6fd
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-06
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-06
+
+    nghttpx: Limit header fields from backend
+
+commit 95ca4f55d5cf5022843ccb77a46cdbe5c40aed82
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-06
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-06
+
+    asio: client: Fix connect timeout does not work, return from cb if session stopped
+    
+    This change removed client::session::connect_timeout() functon, and
+    connect timeout should be given to client::session constructor.  This
+    is required since async operation starts in the constructor.
+
+commit 231665d67b6abea0616136fe81cb8d82ef44f32a
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-03
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-03
+
+    Don't use ac_save_* since they are overwritten by macro
+
+commit 4c0555827314a11d7407807ace2e1f9dcc5d5c74
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-03
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-03
+
+    Evaluate nghttp2_session_want_read and nghttp2_session_want_write when determining session is about to close
+
+commit 35c3b36549d21c101b651347ad616022dc54e494
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-01
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-01
+
+    nghttpx: Document special value localhost in Forwarded "by" and "for" params
+
+commit 03872bfacd441c0af6724b4b216d31b0b5dc6593
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-01
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-01
+
+    nghttpx: Don't quote Forwarded "by" parameter if it is special value "localhost"
+
+commit 5e9bcbec9a60eac4ca8b2e68e10fc7d2f972965c
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-02-01
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-01
+
+    nghttpx: Fix bug that IPv6 address in Forwarded "for" is not quoted-string
+
+commit aa07fe7fa679c9b60f777137ebc77db8282707bb
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-31
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-02-01
+
+    nghttpx: Support multiple frontend addresses
+    
+    This commit allows nghttpx to listen to multiple address and port pair
+    by specifying -f option multiple times.
+
+commit 1d99b425caae243ac1715e318550b3f8a1881310
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-30
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-30
+
+    Use ac_save_LIBS instead of LIBS_OLD
+
+commit 7a6a59178a7099b6966d6d880a6e69aaf4c1391f
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-30
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-30
+
+    Don't taint CXXFLAGS from AX_CXX_COMPILE_STDCXX_11
+
+commit 4e44fccdcf1d0fea6a8cd88916040e06fc75d9db
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-30
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-30
+
+    Fix compile error with gcc-6 which enables C++14 by default
+
+commit 703c77ec8981c6d9c2fcc3762b6465c48ae74995
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-29
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-29
+
+    Fix markdown style linking
+
+commit a06af3fa85caf3ef1e47bd611e48c23668469191
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-29
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-29
+
+    Add doc about release scheduling and versioning scheme
+
+commit 686a303cb5a4f83a35f4f8cb759fe251b1338722
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-27
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-27
+
+    Add script to ensure that packaging is good
+
+commit b95df43384c858597ffba94d116449a5dcf627a7
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-27
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-27
+
+    Add genauthoritychartbl.py
+
+commit 5659e295b3c68a19df586dd7775cc20ebd54385c
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-27
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-27
+
+    nghttpd: Add trailer header field to status responses
+
+commit 5b195092e1ec28b8f7ed861f9c552027edeb7fe3
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-27
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-27
+
+    nghttpd: Add -w and -W options to change window size
+
+commit 85bb37ab7cc97f3621fba93fff63d0d2a199963f
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-27
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-27
+
+    Enable ConstructorInitializerAllOnOneLineOrOnePerLine for better diff
+
+commit c5f3eee3bea65344efb86699c6fd4a1ec06cd61e
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-27
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-27
+
+    Update http-parser to 4e382f96e6d3321538a78f2c7f9506d4e79b08d6
+
+commit 1cfdf386ff878e11b2e4c2d538882b1084dbd1c8
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-26
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-27
+
+    src: Faster base64
+
+commit 6d8fe721740a844eb176ee9b5eaf254e24032126
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-26
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-27
+
+    src: Faster percent encode/deocde
+
+commit 98253b1d0d570dd3bee96fd085f638f54d571102
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-26
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-27
+
+    nghttpx: Use DefaultMemchunks as HTTP/2 and SPDY frontend response buffer
+
+commit ad93cea5440b41410d4674d527ce6e2928b5b9da
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-27
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-27
+
+    nghttpx: Fix possible data loss on backend connection upgrade
+
+commit 1739b5a0e6f7a77749ab438d84086ca0bd0dd925
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-27
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-27
+
+    nghttpx: Don't read frontend socket if read watcher is stopped
+
+commit 9ef8e240494a6e8d026ee01c043780047f9efcbd
+Merge: 2b441ef 7fbbaf0
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-26
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-26
+
+    Merge pull request #490 from tavrez/master
+    
+    Fixed Windows makefile version detection
+
+commit 7fbbaf01a9a772e37831e3faff53fcf152f6bce0
+Merge: 2b441ef 5a6f312
+Author:     Reza Tavakoli <reza.tavakoli@ut.ac.ir>
+AuthorDate: 2016-01-26
+Commit:     Reza Tavakoli <reza.tavakoli@ut.ac.ir>
+CommitDate: 2016-01-26
+
+    Merge pull request #1 from tavrez/patch-1
+    
+    Fixing window makefile version detection
+
+commit 5a6f3121824f256afad1963957d660fb6071c4f8
+Author:     Reza Tavakoli <reza.tavakoli@ut.ac.ir>
+AuthorDate: 2016-01-26
+Commit:     Reza Tavakoli <reza.tavakoli@ut.ac.ir>
+CommitDate: 2016-01-26
+
+    Fixing window makefile version detection
+
+commit 2b441ef9af4361cfc5dcb8f7e9dde6107875cdfe
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-25
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-25
+
+    Bump up version number to 1.7.1-DEV
+
+commit e14da859b6d45c7b1a6fd18aa971daac17966f4f
+Merge: 0248d97 863addc
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-11
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-11
+
+    Merge branch 'master' into simple-extensions
+
+commit 0248d979fe7a71d35d7938944c04e270f76421ae
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-10
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-10
+
+    Add missing nghttp2_option_set_user_recv_extension_type.rst
+
+commit 0caefe20ef1261b31712bc351177298c4fd937cd
+Merge: 9c84f60 a7ec905
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2016-01-09
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2016-01-09
+
+    Merge branch 'master' into simple-extensions
+
+commit 9c84f60ba0625f1874ff92cce43da31617069800
+Merge: 83cc251 7ca9ead
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2015-12-04
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2015-12-04
+
+    Merge branch 'master' into simple-extensions
+
+commit 83cc2511e33ef3bd486261454030c038b10852cc
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2015-11-17
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2015-11-17
+
+    Remove flags parameter from nghttp2_pack_extension_callback
+    
+    It has no usecase at the moment.  It is most likely that applications
+    know the flags when it submitted extension frame, no need to modify it
+    later.  Possibly feature bloat.
+
+commit eb4e402aae4e2fb0073d9fe75960cf5a0e27e70b
+Merge: 5d611d2 fe87203
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2015-11-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2015-11-14
+
+    Merge branch 'master' into simple-extensions
+
+commit 5d611d2e240d26278394b2b942b90293d88e18d7
+Merge: 837e716 6ff9c4d
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2015-10-29
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2015-10-29
+
+    Merge branch 'master' into simple-extensions
+
+commit 837e71630600df6854f9d9fffc075787602a2a6e
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2015-10-15
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2015-10-15
+
+    Fix compile error with gcc
+
+commit 061a557839207028593015c5f0bd3ae4b81018bd
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2015-10-15
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2015-10-15
+
+    Add nghttp2_option_set_user_recv_extension_type to opt-in incoming extension type
+
+commit d9893d014c4e1ed061472bbac63c46324582a213
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2015-10-11
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2015-10-11
+
+    Add tests
+
+commit 3785cf07ba654d3f1b02a538d87b621b78fb65e4
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2015-10-10
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2015-10-11
+
+    Add simple HTTP/2 extension framework
+    
+    Application can utilize this framework to send/receive user defined
+    extension frames.  These frames are expected not to change existing
+    protocol behaviour.
