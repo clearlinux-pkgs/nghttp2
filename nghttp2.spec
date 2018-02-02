@@ -4,7 +4,7 @@
 #
 Name     : nghttp2
 Version  : 1.29.0
-Release  : 29
+Release  : 30
 URL      : https://github.com/nghttp2/nghttp2/releases/download/v1.29.0/nghttp2-1.29.0.tar.xz
 Source0  : https://github.com/nghttp2/nghttp2/releases/download/v1.29.0/nghttp2-1.29.0.tar.xz
 Summary  : HTTP/2 C library
