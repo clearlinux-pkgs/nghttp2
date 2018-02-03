@@ -1,204 +1,176 @@
-commit 439b9b6c6a3120da7a75ace62e9223751f4342c0 (HEAD, tag: v1.29.0, origin/master, origin/HEAD, master)
+commit f0836c7e3945fde6044e840475461f83d4e87d8c (HEAD, tag: v1.30.0, origin/master, origin/HEAD, master)
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-02-02
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-02-02
+
+    Update manual pages
+
+commit 25db178b7dfd109b24cfe402a1dbead0b4f5fbdb
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-02-02
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-02-02
+
+    Bump up version number to 1.30.0, LT revision to 29:2:15
+
+commit 1b6713e6ec185bfd6a8375af282dd6fa02a2ab93
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-02-02
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-02-02
+
+    Update AUTHORS
+
+commit c1a496cf4e5369d375aab732f170f3c7cdeef0ce
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-02-02
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-02-02
+
+    nghttpx: Fix bug that h1 backend idle timeout expires sooner
+
+commit e098a2113213825e2121eeaf4ced0608b47222d8
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-01-28
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-01-28
+
+    mruby: Fix bug that response header is unexpectedly overwritten
+    
+    The bug is the same bug fixed by
+    6deee2037dd76c7bc612a33d31dc5c8787427844, but in response handler.
+
+commit 0ba4bf51e459cb223d9d7b493680f81e4db8440b
+Merge: 6761a933 6deee203
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-01-28
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2018-01-28
+
+    Merge pull request #1120 from dylanplecki/issue-1119-mruby-header-overwrite
+    
+    Fix #1119: Overwrite of first header on mruby call to env.req.set_header(..)
+
+commit 6deee2037dd76c7bc612a33d31dc5c8787427844
+Author:     Dylan Plecki <dplecki@uber.com>
+AuthorDate: 2018-01-26
+Commit:     Dylan Plecki <dplecki@uber.com>
+CommitDate: 2018-01-26
+
+    Fix #1119: Stop overwrite of first header on mruby call to env.req.set_header(..)
+
+commit 6761a933fe783e9a69eb7cb9d48cae0c31a94f88
+Merge: 652f57e7 5cc3d159
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-01-14
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2018-01-14
+
+    Merge pull request #1105 from nghttp2/nghttpx-upgrade-scheme
+    
+    nghttpx: Add upgrade-scheme parameter to backend option
+
+commit 5cc3d159e1a5bdb8f54121571a7dc30174723535
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-01-08
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-01-08
+
+    nghttpx: Add upgrade-scheme parameter to backend option
+    
+    If "upgrade-scheme" parameter is present in backend option along with
+    "tls" paramter, HTTP/2 :scheme pseudo header field is changed to
+    "https" from "http" when forwarding a request to this particular
+    backend.  This is a workaround for a server which requests "https"
+    scheme on HTTP/2 connection encrypted by TLS.
+
+commit 652f57e79d7ca07480c04f0ed473a5ad9adee0ae
+Merge: 0fbb46ed acd6b40e
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-01-08
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2018-01-08
+
+    Merge pull request #1104 from nghttp2/allow-ping-after-goaway
+    
+    Allow PING frame to be sent after GOAWAY
+
+commit acd6b40e4cd2efe1f197f6f7bea4663fb9a27372
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-01-08
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-01-08
+
+    Allow PING frame to be sent after GOAWAY
+
+commit 0fbb46edd640187d50e764d602ea5f92eb55f6f3
+Merge: 6ad629de a31a2e3b
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-01-04
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2018-01-04
+
+    Merge pull request #1101 from nghttp2/remember-pushed-links
+    
+    nghttpx: Remember which resource is pushed
+
+commit 6ad629de47f46aedf962166aef2638cf12eebc46
+Merge: a776b0db 74754982
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-01-04
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2018-01-04
+
+    Merge pull request #1102 from nghttp2/fix-missing-alpn-validation
+    
+    nghttpx: Fix missing ALPN validation (--npn-list)
+
+commit 74754982f118b67b39547fd11434f5453aab5d0a
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-01-04
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-01-04
+
+    nghttpx: Fix missing ALPN validation (--npn-list)
+    
+    This commit fixes the bug that ALPN validation does not occur when
+    ALPN list is not sent from client.
+
+commit a31a2e3b2c410b15c2d256bf7e5ddf2b1cfb4fb3
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-01-04
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-01-04
+
+    nghttpx: Remember which resource is pushed
+    
+    Remember which resource is pushed in order to conform to the semantics
+    described in RFC 8297.
+
+commit a776b0dbcc422f4bd262fd40e8dcd4f7c90a0c10
+Merge: 72f52716 cfd926f0
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-12-20
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2017-12-20
+
+    Merge pull request #1092 from nghttp2/define-103
+    
+    src: Define 103 status code
+
+commit cfd926f09b4731e1e30a78167ccff930a799c457
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2017-12-20
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2017-12-20
+
+    src: Define 103 status code
+
+commit 72f52716ae52ade7f460b2afd30f24ac52a70003
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
 AuthorDate: 2017-12-19
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
 CommitDate: 2017-12-19
 
-    Update manual pages
-
-commit 48498452925b7d0bc5d883a3f76d01855d53d0cf
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-12-19
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-12-19
-
-    Bump up version number to v1.29.0, LT revision to 29:1:15
-
-commit d30f38163c996d7aae43519d9245d7d87fd9a783
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-12-17
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-12-17
-
-    Update manual pages
-
-commit cff9ebe1ddf53d61dd2c66d4f68b7b7265ecdac0
-Merge: 48f57407 4d1139f6
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-12-17
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-12-17
-
-    Merge pull request #1091 from nghttp2/remove-spdy
-    
-    Remove SPDY
-
-commit 4d1139f65399c437700cf51bec98832e05a89f06
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-12-17
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-12-17
-
-    Remove SPDY
-
-commit 48f574076c9ef0104ed6e73ef02e30de46bd7b74
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-12-16
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-12-16
-
-    nghttpx: Update doc
-
-commit c1f14d73c7ae64391c024c3187984fbda2a51bbf
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-12-14
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-12-14
-
-    Update manual pages
-
-commit 216f4dad83a0fb0778b915c9d29f957438b0ba18
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-12-14
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-12-14
-
-    nghttpx: Remove redundant check
-
-commit a4e27d766b57ebb8ac4c34db9b6da2026252a0d8
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-12-14
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-12-14
-
-    Revert "nghttpx: Use an existing h2 backend connection as much as possible"
-    
-    This reverts commit f507b5eee4b40a6621b39e8519c22a8d741794de.
-    
-    Balancing load is more important at the moment.
-
-commit 96df14d2ecb87e87e802d16e5b1388c0958c01e6
-Merge: 96ea9cda 2365f12e
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-12-14
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-12-14
-
-    Merge pull request #1084 from dvetutnev/cmake_module_path
-    
-    Fix CMAKE_MODULE_PATH
-
-commit 2365f12e394541d22ba806f23313d73d4e976830
-Author:     Dmitriy Vetutnev <d.vetutnev@gmail.com>
-AuthorDate: 2017-12-06
-Commit:     Dmitriy Vetutnev <d.vetutnev@gmail.com>
-CommitDate: 2017-12-06
-
-    Fix CMAKE_MODULE_PATH
-
-commit 96ea9cdaf78cefcbc220c6cad03d644061cfce16
-Merge: a9416999 03f7ec0f
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-12-03
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-12-03
-
-    Merge pull request #1083 from nghttp2/nghttpx-api-tmp-file
-    
-    nghttpx: Write API request body in temporary file
-
-commit 03f7ec0f60dd75121578a15d8320ace7def3a279
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-12-02
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-12-03
-
-    nghttpx: Write API request body in temporary file
-
-commit a9416999628c5fa6cc226e5dffdfe750de30637e
-Merge: 04348ff2 2056e812
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-12-02
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-12-02
-
-    Merge pull request #1082 from nghttp2/nghttpx-increase-api-max-request-body
-    
-    nghttpx: Increase api-max-request-body
-
-commit 2056e812bd6cbf3d4918d1d65d85cb02bde8220c
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-12-02
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-12-02
-
-    nghttpx: Increase api-max-request-body
-
-commit 04348ff20e42db67a1819dda03f709e45985cdad
-Merge: d8e378fe 1ebb6810
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-12-01
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-12-01
-
-    Merge pull request #1081 from nghttp2/nghttpx-faster-parse-config
-    
-    nghttpx: Faster configuration loading with lots of backends
-
-commit d8e378fea95780e66394dc9d471facbc7e891e34
-Merge: 2a694b27 a3ebeeaf
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-12-01
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-12-01
-
-    Merge pull request #1080 from nghttp2/nghttpx-fix-crash-with-backend-http-proxy-uri
-    
-    nghttpx: Fix crash with --backend-http-proxy-uri option
-
-commit 1ebb6810a1aca7ec641e602924fb2ecb90f59f51
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-12-01
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-12-01
-
-    nghttpx: Faster configuration loading with lots of backends
-
-commit 2a694b270a37806e3f7431b0f64949fdd047c559
-Merge: 97f1735c 422ad1be
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-12-01
-Commit:     GitHub <noreply@github.com>
-CommitDate: 2017-12-01
-
-    Merge pull request #1077 from nghttp2/refused-stream
-    
-    Use NGHTTP2_REFUSED_STREAM for streams which are closed by GOAWAY
-
-commit a3ebeeafbab4c871a7856e2a6e4fdde497b24060
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-12-01
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-12-01
-
-    nghttpx: Fix crash with --backend-http-proxy-uri option
-
-commit 422ad1be3253fb263a70b159e2e85d803f8a2d85
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-30
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-30
-
-    Use NGHTTP2_REFUSED_STREAM for streams which are closed by GOAWAY
-    
-    The error code NGHTTP2_REFUSED_STREAM is passed to
-    nghttp2_on_stream_close callback when a stream is closed because its
-    stream ID is strictly larger than incoming or outgoing GOAWAY.
-
-commit 97f1735cf5a15ae107aeed9bbf8d06ad7dc5a3c2
-Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2017-11-25
-Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2017-11-25
-
-    Bump up version number to 1.29.0
+    Bump up version number to 1.30.0-DEV
