@@ -114,6 +114,7 @@ libnghttp2.so.14:nghttp2_session_server_new3
 libnghttp2.so.14:nghttp2_session_set_local_window_size
 libnghttp2.so.14:nghttp2_session_set_next_stream_id
 libnghttp2.so.14:nghttp2_session_set_stream_user_data
+libnghttp2.so.14:nghttp2_session_set_user_data
 libnghttp2.so.14:nghttp2_session_terminate_session
 libnghttp2.so.14:nghttp2_session_terminate_session2
 libnghttp2.so.14:nghttp2_session_upgrade
