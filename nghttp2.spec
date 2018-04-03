@@ -4,7 +4,7 @@
 #
 Name     : nghttp2
 Version  : 1.31.0
-Release  : 32
+Release  : 33
 URL      : https://github.com/nghttp2/nghttp2/releases/download/v1.31.0/nghttp2-1.31.0.tar.bz2
 Source0  : https://github.com/nghttp2/nghttp2/releases/download/v1.31.0/nghttp2-1.31.0.tar.bz2
 Summary  : HTTP/2 C library
@@ -110,7 +110,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1522119502
+export SOURCE_DATE_EPOCH=1522781826
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
@@ -137,7 +137,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1522119502
+export SOURCE_DATE_EPOCH=1522781826
 rm -rf %{buildroot}
 pushd ../build32/
 %make_install32
