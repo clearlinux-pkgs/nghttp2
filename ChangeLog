@@ -1,23 +1,280 @@
-commit 1e22b36c61d52bb0446a63f5994b1fbe8c7ce0db (HEAD, tag: v1.31.1, origin/v1.31.x, origin/HEAD, v1.31.x)
+commit 572735e496f0fe2d1e148695a74d1ee720278585 (HEAD, tag: v1.32.0, origin/master, origin/HEAD, master)
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2018-04-07
+AuthorDate: 2018-05-08
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2018-04-07
+CommitDate: 2018-05-08
 
     Update manual pages
 
-commit 0f818baf61c5762093d23520f7ee513d6e9e942e
+commit e8d693c395714fdd0aa0b03c3dea5af016746bb9
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2018-04-07
+AuthorDate: 2018-05-08
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2018-04-07
+CommitDate: 2018-05-08
 
-    Bump up version number to 1.31.1
+    Bump up version number to 1.32.0, LT revision to 30:2:16
 
-commit c411d16945d658a181d92ca36bfea30853edab37
+commit f44dfcd9dcad51e86185d24cb782ce2736c6069c
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-05-08
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-05-08
+
+    Update AUTHORS
+
+commit 1f1b0d93d446a61eec7562db0254b87de55bad03
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-05-07
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-05-07
+
+    Update manual pages
+
+commit ce8c749b776c125f41f94d6e824751fdd392ea8b
+Merge: 86fab997 3e4f257b
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-05-04
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2018-05-04
+
+    Merge pull request #1173 from nghttp2/asio-client-sni
+    
+    asio: Support client side SNI
+
+commit 3e4f257b9193e704fe790077b44f235e01101f52
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-05-03
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-05-03
+
+    asio: Support client side SNI
+
+commit 86fab997b4f5b6321cf9859a16eb7c11f7775fa5
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-05-03
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-05-03
+
+    Upgrade neverbleed to the latest master
+
+commit c3ecd445920e87d64760cc3b4270f94e1991e778
+Merge: a5c408c5 c65ca20a
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-04-28
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2018-04-28
+
+    Merge pull request #1171 from nghttp2/h2load-rate-and-duration
+    
+    h2load: -r and --duration are mutually exclusive
+
+commit c65ca20a494b52c660d8d2413e7af5c7faf6532c
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-04-28
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-04-28
+
+    h2load: -r and --duration are mutually exclusive
+
+commit a5c408c5e3663a82038a1f71db521f5526bfd320
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-04-22
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-04-22
+
+    Ignore all input after calling session_terminate_session
+
+commit 06379b286184e001d8610a5a72326f7d2b9cdf78
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-04-22
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-04-22
+
+    Fix treatment of padding
+
+commit e04de48ed9aab53a41fff91e180613727a1dc3b5
+Merge: 3febaef1 00964642
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-04-14
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2018-04-14
+
+    Merge pull request #1162 from nghttp2/libressl
+    
+    Libressl
+
+commit 009646421c4fd888b97dcda002ef3436070938ef
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-04-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-04-14
+
+    Use LIBRESSL_IN_USE instead of defined(LIBRESSL_VERSION_NUMBER)
+
+commit 8d0b4544f8ff9e8064b70f2daf38f26e815c8703
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-04-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-04-14
+
+    libressl 2.7 has X509_VERIFY_PARAM_*
+
+commit d8a34131e1ea40976802261565a8a977a91e1259
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-04-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-04-14
+
+    libressl 2.7 has SSL_CTX_get0_certificate
+
+commit 5db17d0af9935c8632eff17dd4c5bcabec876728
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-04-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-04-14
+
+    Compile with libressl 2.7.2
+
+commit 1bf69b5662b054af66efa93f937e25b05717b1bc
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-04-14
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-04-14
+
+    Define LIBRESSL_LEGACY_API and LIBRESSL_2_7_API
+    
+    LIBRESSL_LEGACY_API is drop-in replacement for LIBRESSL_IN_USE.  In
+    the upcoming commits, we will add changes to support libressl 2.7.
+
+commit 3febaef1faeeff48f6e3738a530b57c590f7ee0e
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-04-13
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-04-13
+
+    Bump up LT revision to 30:1:16 due to v1.31.1 release
+
+commit b1bd6035e884b3d83748914a3b5f2a8e52a78a2f
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
 AuthorDate: 2018-04-07
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
 CommitDate: 2018-04-07
 
     Fix frame handling
+
+commit b48bcb214aca237a09f115f469869cc5a339cae7
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-04-03
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-04-03
+
+    examples: Use C style comment in .c files
+
+commit 6f3ce2c72daffb29a11c3e0e8afd85ff2eca5755
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-04-03
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-04-03
+
+    examples: Remove unused lambda capture
+
+commit 2f9121cf448f650004fce40b58ddeb95cc66fd33
+Merge: 4c3a3acf e65e7711
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-04-03
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-04-03
+
+    Merge branch 'Sp1l-Sp1l/allow-no-npn'
+
+commit e65e7711cac7ae00da13f20235306fdc3396bdfc
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-04-03
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-04-03
+
+    Add comment on #endif
+
+commit 636ef51b0f9ccc601a6961870f3d52152a7ffdc2
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-04-03
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-04-03
+
+    Fix compile error with -Wunused-function
+
+commit 400934e5a31da0bb756534deefbdc3046e603258
+Author:     Bernard Spil <brnrd@FreeBSD.org>
+AuthorDate: 2018-03-25
+Commit:     Bernard Spil <brnrd@FreeBSD.org>
+CommitDate: 2018-03-25
+
+    [PATCH] Allow building without NPN
+    
+    NPN has been superseeded by ALPN. OpenSSL provides a configure
+    option to disable npn (no-npn) which results in an OpenSSL
+    installation that defines OPENSSL_NO_NEXTPROTONEG in opensslconf.h
+    
+    The #ifdef's look safe here (as the next_proto is initialized as
+    nullptr). Alteratively, macros could be defined for the used npn
+    methods that return a 0 for next_proto.
+    
+    Signed-off-by: Bernard Spil <brnrd@FreeBSD.org>
+
+commit 4c3a3acf9bfd63f3996133ffc8e2a22fb37d14f4
+Merge: 9aa6002c f342260b
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-03-13
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2018-03-13
+
+    Merge pull request #1146 from vszakats/cmakestaticlib
+    
+    cmake: add ENABLE_STATIC_LIB option to build static lib
+
+commit 9aa6002c372c5b272e88bd796822c8344f45f88b
+Merge: 842509da a6dd4970
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-03-13
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2018-03-13
+
+    Merge pull request #1144 from hellojaewon/master
+    
+    Fix typo
+
+commit f342260bfe13a125549949c2aaa0ed8321d01d74
+Author:     Viktor Szakats <vszakats@users.noreply.github.com>
+AuthorDate: 2018-03-12
+Commit:     Viktor Szakats <vszakats@users.noreply.github.com>
+CommitDate: 2018-03-12
+
+    cmake: add ENABLE_STATIC_LIB option to build static lib
+    
+    When using the ENABLE_LIB_ONLY option, only the shared
+    library was built. This new option allows to build the
+    static library as well.
+
+commit a6dd49701631b36e14540b14b6b85241135428ab
+Author:     jwchoi <jwchoi.do@gmail.com>
+AuthorDate: 2018-03-12
+Commit:     jwchoi <jwchoi.do@gmail.com>
+CommitDate: 2018-03-12
+
+    Fix typo
+
+commit 842509dab604e6cc62f7fb98d448294c6ec85763
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-03-11
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-03-11
+
+    Don't allow 101 HTTP status code because HTTP/2 removes HTTP Upgrade
+
+commit 4add618a3faa8d2af25bd33f064ae98274a4939e
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-02-27
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-02-27
+
+    Bump up version number to 1.32.0-DEV
