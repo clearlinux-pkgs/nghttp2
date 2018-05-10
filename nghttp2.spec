@@ -4,7 +4,7 @@
 #
 Name     : nghttp2
 Version  : 1.32.0
-Release  : 35
+Release  : 36
 URL      : https://github.com/nghttp2/nghttp2/releases/download/v1.32.0/nghttp2-1.32.0.tar.bz2
 Source0  : https://github.com/nghttp2/nghttp2/releases/download/v1.32.0/nghttp2-1.32.0.tar.bz2
 Summary  : HTTP/2 C library
