@@ -1,34 +1,433 @@
-commit 4c76aaeea4a66b31c96cc184224cfbbb14af9ceb (HEAD, tag: v1.32.1, origin/v1.32.x, origin/HEAD, v1.32.x)
+commit 9d843334d6c91287c90e133e39b9991edf7b859e (HEAD, tag: v1.33.0, origin/master, origin/HEAD, master)
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-AuthorDate: 2018-08-25
+AuthorDate: 2018-09-02
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2018-08-25
+CommitDate: 2018-09-02
+
+    Update bash_completion
+
+commit 23cb3f38a6186e838ab8fb0ac761cd30fb232327
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-09-02
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-09-02
 
     Update manual pages
 
-commit 2b51ad67d35ea873629f2db6ce5e0b0c88658b88
+commit 1d682dcdae9748e53825f71beb0b5307142317aa
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-09-02
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-09-02
+
+    Bump up version number to 1.33.0, LT revision to 31:0:17
+
+commit 601fbbb4aefa07a9bcc5e8de0acbcbc0f083c6f1
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-09-02
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-09-02
+
+    Update doc
+
+commit f44aa2466ff720b4922ee13674749705ef76b58c
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-09-02
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-09-02
+
+    Update AUTHORS
+
+commit dd74a6dd34074dfc672c55f49047a71befdc733e
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-09-02
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-09-02
+
+    Update manual pages
+
+commit e959e7338e12fd3a3d590002b609775a3a17c391
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-09-01
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-09-01
+
+    src: Refactor utos
+
+commit fb9a204de249749416d9ca05cbdb4530262999e5
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-31
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-31
+
+    nghttpx: Fix compile error without mruby
+
+commit cd096802bde39c91fc96d36876410aec50617135
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-28
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-28
+
+    Update doc
+
+commit 7417fd71a4cc36cb3e94b1095f487cd8c10da821
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-28
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-28
+
+    nghttpx: Per-pattern not per-backend
+
+commit 2d1a981c8113357f2c9888a8511f36ffa7a628ab
+Merge: 31fd707d 45acc922
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-27
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-27
+
+    Merge branch 'akonskarm-master'
+
+commit 45acc922eb60a231a48ffd9216e21563db873753
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-27
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-27
+
+    clang-format
+
+commit 214d0899101b45a86f6acb20b1934a606ccf0454
+Merge: 31fd707d 9a2e38e0
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-27
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-27
+
+    Merge branch 'master' of https://github.com/akonskarm/nghttp2 into akonskarm-master
+
+commit 31fd707d0cbd2856244cdbffed6aa144293040c0
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-27
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-27
+
+    nghttpx: Fix broken healthmon frontend
+
+commit 9a2e38e058b1601bd8491de109312050a93d5f78
+Author:     Alexandros Konstantinakis-Karmis <alexandros.konstantinakis_karmis@nokia.com>
+AuthorDate: 2018-08-27
+Commit:     Alexandros Konstantinakis-Karmis <alexandros.konstantinakis_karmis@nokia.com>
+CommitDate: 2018-08-27
+
+    fix code for reuse addr on asio client
+
+commit d24527e7e60024c332c628db32c6a311b025beef
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
 AuthorDate: 2018-08-25
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
 CommitDate: 2018-08-25
 
-    Bump up version number to 1.32.1, LT revision to 30:3:16
+    Bump up LT revision due to v1.32.1 release
 
-commit 708379dcabfe06f11f1d8469946fa9079ed59813
+commit 6195d747ce33d40cd85057f3a572be73e882ada9
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-24
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-24
+
+    nghttpx: Share mruby context if it is compiled from same file
+
+commit fb97f596e13eb42e50bb8b52892830b18af92da5
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-24
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-24
+
+    nghttpx: Allocate mruby file because fopen requires NULL terminated string
+
+commit 0ccc7a770d0be0e5add55cb83e448d3dd1c2d13f
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-24
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-24
+
+    nghttpx: Move blocked request data to request buffer for API request
+
+commit 32826466f511741f22975b8e53bb502bc4fbd391
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-24
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-24
+
+    nghttpx: Fix crash with API request
+
+commit 0422f8a8446d8451026816a7ebee2437bc62c400
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-24
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-24
+
+    nghttpx: Fix worker process crash with neverbleed write error
+
+commit e329479a990311c04ea6f0272036569a3ed29771
+Merge: f80a7873 b574ae6a
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-23
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2018-08-23
+
+    Merge pull request #1215 from nghttp2/mruby-per-backend
+    
+    nghttpx: Support per-backend mruby script
+
+commit f80a7873ba743b32ffdbe905c70441a54dd19b68
+Merge: de4fd7cd 866ac6ab
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-23
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-23
+
+    Merge branch 'akonskarm-reuse_addr'
+
+commit 866ac6ab2777fe1c1eb049efb7d84fd8431f0094
+Author:     Alexandros Konstantinakis-Karmis <alexandros.konstantinakis_karmis@nokia.com>
+AuthorDate: 2018-08-19
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-23
+
+    add option reuse addr in local endpoint configuration of asio client
+
+commit b574ae6aa2ae803623ed58022ca4c3b51be58652
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-21
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-23
+
+    nghttpx: Support per-backend mruby script
+
+commit de4fd7cd35ff1201a3f32c21ecbf73b9ad5a2bde
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-23
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-23
+
+    doc: Update doc
+
+commit 32d7883c475046ab0f40f22a06a0d43eadd12815
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-23
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-23
+
+    nghttpx: Downstream::request_buf_full: take into account blocked_request_buf_
+
+commit 9b24e1976341c69b6fe85782b705cf069e603a73
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-22
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-22
+
+    nghttpx: Choose h1 protocol if headers have been sent to backend on retry
+
+commit 13ffece12da6edcdea30cb81ef55f79a9ea7428d
+Merge: 11d822c2 9d5b781d
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-22
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2018-08-22
+
+    Merge pull request #1214 from nghttp2/fix-rst-without-dconn
+    
+    Fix stream reset if data from client is arrived before dconn is attached
+
+commit 9d5b781df6a20a72c486f55c56614c022cfe82ab
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-22
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-22
+
+    Fix stream reset if data from client is arrived before dconn is attached
+
+commit 11d822c2a731488bdd5a0b030c160f7a86a981b4
+Merge: 7e06ac10 4098512b
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-19
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2018-08-19
+
+    Merge pull request #1211 from nghttp2/stream-user-data
+    
+    Tweak nghttp2_session_set_stream_user_data
+
+commit 4098512b5dbeff301c67eed1bf4dcb3aa644c500
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
 AuthorDate: 2018-08-18
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2018-08-25
+CommitDate: 2018-08-18
 
     Tweak nghttp2_session_set_stream_user_data
     
     nghttp2_session_set_stream_user_data now works for a stream which is
     not created yet, but the request which creates the stream is queued.
 
-commit 73106b0d0d4fb4e9bad560e713a349bcae949373
+commit 7e06ac1072ec7a1f8748727b196128c24d7af31d
+Merge: e5b3f9ad c6d8c401
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-08-02
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-02
+
+    Merge branch 'akonskarm-master'
+
+commit c6d8c4013cc746ec4cd37e90ac192aa4c7a6b68f
+Author:     Alexandros Konstantinakis-Karmis <alexandros.konstantinakis_karmis@nokia.com>
+AuthorDate: 2018-07-23
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-08-02
+
+    support definition of local endpoint for cleartext client session
+
+commit e5b3f9addd49bca27e2f99c5c65a564eb5c0cf6d
 Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
 AuthorDate: 2018-06-09
 Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
-CommitDate: 2018-08-25
+CommitDate: 2018-06-09
 
     Compile with clang-6.0
+
+commit 880f948684980206660c1fba6c3091aee0da8780
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-06-09
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-06-09
+
+    Enable IndentPPDirectives
+
+commit bda7e079e2bcb68d40f15f8a2559d1dc80fc5b89
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-06-09
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-06-09
+
+    Update .clang-format
+
+commit fc94018b9795937bf4fdfc7ec34928e815c188eb
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-06-09
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-06-09
+
+    clang-format-6.0
+
+commit 159c5e446a2f3326ad64b312a073b3e00ba0ed5f
+Merge: bfd4d8b0 2ba13899
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-06-05
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2018-06-05
+
+    Merge pull request #1184 from PiotrSikora/max_streams
+    
+    Fix handling of SETTINGS_MAX_CONCURRENT_STREAMS.
+
+commit bfd4d8b052a594eb61b39d0ff260fbd19856763d
+Merge: 388e7858 d65a4173
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-06-03
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2018-06-03
+
+    Merge pull request #1183 from PiotrSikora/spdy
+    
+    Remove remaining SPDY code from the integration tests.
+
+commit 388e7858221b43d7d1a6a80bb3323961025fe153
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-06-03
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-06-03
+
+    Fix typo
+
+commit 2ba1389993729fcb6ee5794ac512f2b67b29952e
+Author:     Piotr Sikora <piotrsikora@google.com>
+AuthorDate: 2018-05-30
+Commit:     Piotr Sikora <piotrsikora@google.com>
+CommitDate: 2018-05-30
+
+    Fix handling of SETTINGS_MAX_CONCURRENT_STREAMS.
+    
+    The maximum number of outgoing concurrent streams is initially
+    limited to 100 to avoid issues when the local endpoint submits
+    lots of requests before receiving initial SETTINGS frame from
+    the remote endpoint, since sending them at once to the remote
+    endpoint could lead to rejection of some of the requests.
+    
+    This initial limit is overwritten with the value advertised in
+    SETTINGS_MAX_CONCURRENT_STREAMS setting by the remote endpoint,
+    but previously, it wasn't lifted if the remote endpoint didn't
+    advertise that setting (implying no limits), in which case the
+    limit of 100 was retained, even though it was never advertised
+    by the remote endpoint.
+    
+    Signed-off-by: Piotr Sikora <piotrsikora@google.com>
+
+commit d65a41730617bf3880e07ae342f8b2737c96f382
+Author:     Piotr Sikora <piotrsikora@google.com>
+AuthorDate: 2018-05-30
+Commit:     Piotr Sikora <piotrsikora@google.com>
+CommitDate: 2018-05-30
+
+    Remove remaining SPDY code from the integration tests.
+    
+    Signed-off-by: Piotr Sikora <piotrsikora@google.com>
+
+commit 575bc309b95b2283f8d6c1e84bf80aedd280b2a1
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-05-12
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-05-12
+
+    Fix typo
+
+commit 00909d074208a7e92ee431e96ed33555f612a2d1
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-05-12
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-05-12
+
+    Update doc
+
+commit a7e38724e731fb3d789e3cd55c74ccea50c29b64
+Merge: 2e6593e5 325612bc
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-05-12
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2018-05-12
+
+    Merge pull request #1177 from nghttp2/origin-frame
+    
+    ORIGIN frame
+
+commit 325612bcdeb2a6c81d512704b544a6adbcfc1b4d
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-05-10
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-05-12
+
+    nghttp: Receive ORIGIN frame
+
+commit 80342215259d23a534c3c2a4382bdc9a3f4c78a2
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-05-10
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-05-12
+
+    Implement ORIGIN frame
+
+commit 2e6593e5a5579393b90473b9b747ea32cec4cdd7
+Author:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+AuthorDate: 2018-05-08
+Commit:     Tatsuhiro Tsujikawa <tatsuhiro.t@gmail.com>
+CommitDate: 2018-05-08
+
+    Bump up version number to 1.33.0-DEV
