@@ -4,16 +4,16 @@
 #
 Name     : nghttp2
 Version  : 1.34.0
-Release  : 39
+Release  : 40
 URL      : https://github.com/nghttp2/nghttp2/releases/download/v1.34.0/nghttp2-1.34.0.tar.bz2
 Source0  : https://github.com/nghttp2/nghttp2/releases/download/v1.34.0/nghttp2-1.34.0.tar.bz2
 Summary  : HTTP/2 C library
 Group    : Development/Tools
 License  : BSD-2-Clause MIT
-Requires: nghttp2-lib
-Requires: nghttp2-license
-Requires: nghttp2-man
-Requires: nghttp2-data
+Requires: nghttp2-data = %{version}-%{release}
+Requires: nghttp2-lib = %{version}-%{release}
+Requires: nghttp2-license = %{version}-%{release}
+Requires: nghttp2-man = %{version}-%{release}
 BuildRequires : boost-dev
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-golang
@@ -42,6 +42,14 @@ BuildRequires : xz-dev
 BuildRequires : xz-dev32
 
 %description
+
+
+%package abi
+Summary: abi components for the nghttp2 package.
+Group: Default
+
+%description abi
+abi components for the nghttp2 package.
 
 
 %package data
@@ -130,7 +138,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1538660692
+export SOURCE_DATE_EPOCH=1542383151
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
@@ -143,6 +151,7 @@ make  %{?_smp_mflags}
 
 pushd ../build32/
 export PKG_CONFIG_PATH="/usr/lib32/pkgconfig"
+export ASFLAGS="$ASFLAGS --32"
 export CFLAGS="$CFLAGS -m32"
 export CXXFLAGS="$CXXFLAGS -m32"
 export LDFLAGS="$LDFLAGS -m32"
@@ -156,14 +165,14 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 cd ../build32;
-make VERBOSE=1 V=1 %{?_smp_mflags} check
+make VERBOSE=1 V=1 %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1538660692
+export SOURCE_DATE_EPOCH=1542383151
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/nghttp2
-cp COPYING %{buildroot}/usr/share/doc/nghttp2/COPYING
-cp doc/_exts/sphinxcontrib/LICENSE.rubydomain %{buildroot}/usr/share/doc/nghttp2/doc__exts_sphinxcontrib_LICENSE.rubydomain
+mkdir -p %{buildroot}/usr/share/package-licenses/nghttp2
+cp COPYING %{buildroot}/usr/share/package-licenses/nghttp2/COPYING
+cp doc/_exts/sphinxcontrib/LICENSE.rubydomain %{buildroot}/usr/share/package-licenses/nghttp2/doc__exts_sphinxcontrib_LICENSE.rubydomain
 pushd ../build32/
 %make_install32
 if [ -d  %{buildroot}/usr/lib32/pkgconfig ]
@@ -177,6 +186,10 @@ popd
 
 %files
 %defattr(-,root,root,-)
+
+%files abi
+%defattr(-,root,root,-)
+/usr/share/abi/libnghttp2.so.14.abi
 
 %files data
 %defattr(-,root,root,-)
@@ -197,7 +210,7 @@ popd
 
 %files doc
 %defattr(0644,root,root,0755)
-/usr/share/doc/nghttp2/README.rst
+%doc /usr/share/doc/nghttp2/*
 
 %files lib
 %defattr(-,root,root,-)
@@ -211,8 +224,8 @@ popd
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/doc/nghttp2/COPYING
-/usr/share/doc/nghttp2/doc__exts_sphinxcontrib_LICENSE.rubydomain
+/usr/share/package-licenses/nghttp2/COPYING
+/usr/share/package-licenses/nghttp2/doc__exts_sphinxcontrib_LICENSE.rubydomain
 
 %files man
 %defattr(0644,root,root,0755)
