@@ -4,7 +4,7 @@
 #
 Name     : nghttp2
 Version  : 1.34.0
-Release  : 42
+Release  : 43
 URL      : https://github.com/nghttp2/nghttp2/releases/download/v1.34.0/nghttp2-1.34.0.tar.bz2
 Source0  : https://github.com/nghttp2/nghttp2/releases/download/v1.34.0/nghttp2-1.34.0.tar.bz2
 Summary  : HTTP/2 C library
@@ -42,14 +42,6 @@ BuildRequires : xz-dev
 BuildRequires : xz-dev32
 
 %description
-
-
-%package abi
-Summary: abi components for the nghttp2 package.
-Group: Default
-
-%description abi
-abi components for the nghttp2 package.
 
 
 %package data
@@ -138,7 +130,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1542406573
+export SOURCE_DATE_EPOCH=1542750838
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
@@ -168,7 +160,7 @@ cd ../build32;
 make VERBOSE=1 V=1 %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1542406573
+export SOURCE_DATE_EPOCH=1542750838
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/nghttp2
 cp COPYING %{buildroot}/usr/share/package-licenses/nghttp2/COPYING
@@ -186,10 +178,6 @@ popd
 
 %files
 %defattr(-,root,root,-)
-
-%files abi
-%defattr(-,root,root,-)
-/usr/share/abi/libnghttp2.so.14.abi
 
 %files data
 %defattr(-,root,root,-)
