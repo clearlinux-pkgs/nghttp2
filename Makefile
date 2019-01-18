@@ -1,5 +1,5 @@
 PKG_NAME := nghttp2
-URL = https://github.com/nghttp2/nghttp2/releases/download/v1.35.1/nghttp2-1.35.1.tar.bz2
+URL = https://github.com/nghttp2/nghttp2/releases/download/v1.36.0/nghttp2-1.36.0.tar.xz
 ARCHIVES = 
 
 include ../common/Makefile.common
