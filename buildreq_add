@@ -6,3 +6,4 @@ boost-dev
 libxml2-dev32
 xz-dev32
 libevent-dev32
+Cython
