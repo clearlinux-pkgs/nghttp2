@@ -1,6 +1,8 @@
 Configure miss: consistency of all components of python development environment
 Configure miss: cython.py
-Configure miss: ev_time in -lev
+Configure miss: ev.h usability
+Configure miss: ev.h presence
+Configure miss: ev.h
 Configure miss: LIBCARES
 Configure miss: JANSSON
 Configure miss: library containing malloc_stats_print
