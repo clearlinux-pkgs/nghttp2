@@ -4,7 +4,7 @@
 #
 Name     : nghttp2
 Version  : 1.39.2
-Release  : 53
+Release  : 54
 URL      : https://github.com/nghttp2/nghttp2/releases/download/v1.39.2/nghttp2-1.39.2.tar.xz
 Source0  : https://github.com/nghttp2/nghttp2/releases/download/v1.39.2/nghttp2-1.39.2.tar.xz
 Summary  : HTTP/2 C library
@@ -124,6 +124,7 @@ man components for the nghttp2 package.
 
 %prep
 %setup -q -n nghttp2-1.39.2
+cd %{_builddir}/nghttp2-1.39.2
 pushd ..
 cp -a nghttp2-1.39.2 build32
 popd
@@ -133,14 +134,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1568873838
+export SOURCE_DATE_EPOCH=1592629620
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -Os -fdata-sections -ffat-lto-objects -ffunction-sections -flto=4 -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -Os -fdata-sections -ffat-lto-objects -ffunction-sections -flto=4 -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -Os -fdata-sections -ffat-lto-objects -ffunction-sections -flto=4 -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -Os -fdata-sections -ffat-lto-objects -ffunction-sections -flto=4 -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -Os -fdata-sections -ffat-lto-objects -ffunction-sections -flto=4 -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -Os -fdata-sections -ffat-lto-objects -ffunction-sections -flto=4 -fno-semantic-interposition "
 %configure --disable-static
 make  %{?_smp_mflags}
@@ -164,12 +165,12 @@ cd ../build32;
 make VERBOSE=1 V=1 %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1568873838
+export SOURCE_DATE_EPOCH=1592629620
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/nghttp2
-cp COPYING %{buildroot}/usr/share/package-licenses/nghttp2/COPYING
-cp doc/_exts/sphinxcontrib/LICENSE.rubydomain %{buildroot}/usr/share/package-licenses/nghttp2/doc__exts_sphinxcontrib_LICENSE.rubydomain
-cp third-party/mruby/LICENSE %{buildroot}/usr/share/package-licenses/nghttp2/third-party_mruby_LICENSE
+cp %{_builddir}/nghttp2-1.39.2/COPYING %{buildroot}/usr/share/package-licenses/nghttp2/7f6f3c0c08925232459e499d66231cb5da01d811
+cp %{_builddir}/nghttp2-1.39.2/doc/_exts/sphinxcontrib/LICENSE.rubydomain %{buildroot}/usr/share/package-licenses/nghttp2/2e3d96196666de3d8582c67fcdc7804f28e1fe0c
+cp %{_builddir}/nghttp2-1.39.2/third-party/mruby/LICENSE %{buildroot}/usr/share/package-licenses/nghttp2/c9082c3edb3c2a747835f63d358337c4e05371ed
 pushd ../build32/
 %make_install32
 if [ -d  %{buildroot}/usr/lib32/pkgconfig ]
@@ -217,9 +218,9 @@ popd
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/nghttp2/COPYING
-/usr/share/package-licenses/nghttp2/doc__exts_sphinxcontrib_LICENSE.rubydomain
-/usr/share/package-licenses/nghttp2/third-party_mruby_LICENSE
+/usr/share/package-licenses/nghttp2/2e3d96196666de3d8582c67fcdc7804f28e1fe0c
+/usr/share/package-licenses/nghttp2/7f6f3c0c08925232459e499d66231cb5da01d811
+/usr/share/package-licenses/nghttp2/c9082c3edb3c2a747835f63d358337c4e05371ed
 
 %files man
 %defattr(0644,root,root,0755)
