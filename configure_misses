@@ -1,4 +1,3 @@
-Configure miss: consistency of all components of python development environment
 Configure miss: cython.py
 Configure miss: ev.h usability
 Configure miss: ev.h presence
@@ -9,7 +8,6 @@ Configure miss: library containing malloc_stats_print
 Configure miss: library containing je_malloc_stats_print
 Configure miss: struct sockaddr_in6.sin6_len
 Configure miss: sqrt
-Configure miss: consistency of all components of python development environment
 Configure miss: cython.py
 Configure miss: ev_time in -lev
 Configure miss: libcares >= 1.7.5
