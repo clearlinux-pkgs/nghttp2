@@ -1,10 +1,10 @@
 # This file contains additional build requirements that did not get
 # picked up automatically. One name per line, no whitespace.
-xz-dev
-libxml2-dev
-boost-dev
-libxml2-dev32
-xz-dev32
-libevent-dev32
 Cython
+boost-dev
+libevent-dev32
+libxml2-dev
+libxml2-dev32
 python3-dev
+xz-dev
+xz-dev32

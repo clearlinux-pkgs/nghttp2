@@ -1,8 +1,16 @@
 # This file contains pkgconfig build requirements that get picked up
 # but are undesirable. One entry per line, no whitespace.
 jansson
-libspdylay
 32jansson
-32libspdylay
-32libcares
 libcares
+32libcares
+libspdylay
+32libspdylay
+libbpf
+32libbpf
+libnghttp3
+32libnghttp3
+libngtcp2
+32libngtcp2
+libngtcp2_crypto_openssl
+32libngtcp2_crypto_openssl
