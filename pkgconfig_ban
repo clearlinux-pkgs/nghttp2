@@ -14,3 +14,5 @@ libngtcp2
 32libngtcp2
 libngtcp2_crypto_openssl
 32libngtcp2_crypto_openssl
+libngtcp2_crypto_boringssl
+32libngtcp2_crypto_boringssl

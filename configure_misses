@@ -1,5 +1,7 @@
 Configure miss: SSL_is_quic
 Configure miss: SSL_is_quic
+Configure miss: SSL_set_quic_early_data_context
+Configure miss: SSL_set_quic_early_data_context
 Configure miss: cython.py
 Configure miss: cython.py
 Configure miss: ev.h
@@ -16,8 +18,6 @@ Configure miss: libnghttp3 >= 0.0.0
 Configure miss: libnghttp3 >= 0.0.0
 Configure miss: libngtcp2 >= 0.0.0
 Configure miss: libngtcp2 >= 0.0.0
-Configure miss: libngtcp2_crypto_openssl >= 0.0.0
-Configure miss: libngtcp2_crypto_openssl >= 0.0.0
 Configure miss: library containing je_malloc_stats_print
 Configure miss: library containing je_malloc_stats_print
 Configure miss: library containing malloc_stats_print
