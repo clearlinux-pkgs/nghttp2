@@ -1,6 +1,6 @@
 # This file contains additional build requirements that did not get
 # picked up automatically. One name per line, no whitespace.
-Cython
+pypi-cython
 boost-dev
 libevent-dev32
 libxml2-dev
