@@ -14,10 +14,10 @@ Configure miss: jansson >= 2.5
 Configure miss: jansson >= 2.5
 Configure miss: libcares >= 1.7.5
 Configure miss: libcares >= 1.7.5
-Configure miss: libnghttp3 >= 0.0.0
-Configure miss: libnghttp3 >= 0.0.0
-Configure miss: libngtcp2 >= 0.0.0
-Configure miss: libngtcp2 >= 0.0.0
+Configure miss: libnghttp3 >= 0.2.0
+Configure miss: libnghttp3 >= 0.2.0
+Configure miss: libngtcp2 >= 0.2.0
+Configure miss: libngtcp2 >= 0.2.0
 Configure miss: library containing je_malloc_stats_print
 Configure miss: library containing je_malloc_stats_print
 Configure miss: library containing malloc_stats_print
