@@ -10,14 +10,15 @@ Configure miss: g++ option to enable C++11 features
 Configure miss: g++ option to enable C++11 features
 Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: gcc options needed to detect all undeclared functions
+Configure miss: i686-generic-linux-gnu-file
 Configure miss: jansson >= 2.5
 Configure miss: jansson >= 2.5
 Configure miss: libcares >= 1.7.5
 Configure miss: libcares >= 1.7.5
-Configure miss: libnghttp3 >= 0.2.0
-Configure miss: libnghttp3 >= 0.2.0
-Configure miss: libngtcp2 >= 0.2.0
-Configure miss: libngtcp2 >= 0.2.0
+Configure miss: libnghttp3 >= 0.4.0
+Configure miss: libnghttp3 >= 0.4.0
+Configure miss: libngtcp2 >= 0.6.0
+Configure miss: libngtcp2 >= 0.6.0
 Configure miss: library containing je_malloc_stats_print
 Configure miss: library containing je_malloc_stats_print
 Configure miss: library containing malloc_stats_print
@@ -26,3 +27,4 @@ Configure miss: sqrt
 Configure miss: sqrt
 Configure miss: struct sockaddr_in6.sin6_len
 Configure miss: struct sockaddr_in6.sin6_len
+Configure miss: x86_64-generic-linux-gnu-file
