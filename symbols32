@@ -1,6 +1,7 @@
 libnghttp2.so.14:nghttp2_check_authority
 libnghttp2.so.14:nghttp2_check_header_name
 libnghttp2.so.14:nghttp2_check_header_value
+libnghttp2.so.14:nghttp2_check_header_value_rfc9113
 libnghttp2.so.14:nghttp2_check_method
 libnghttp2.so.14:nghttp2_check_path
 libnghttp2.so.14:nghttp2_hd_deflate_bound
