@@ -1,28 +1,42 @@
 Configure miss: SSL_is_quic
 Configure miss: SSL_is_quic
+Configure miss: SSL_is_quic
 Configure miss: SSL_set_quic_early_data_context
 Configure miss: SSL_set_quic_early_data_context
+Configure miss: SSL_set_quic_early_data_context
+Configure miss: ev.h
 Configure miss: ev.h
 Configure miss: ev_time in -lev
 Configure miss: g++ option to enable C++11 features
 Configure miss: g++ option to enable C++11 features
+Configure miss: g++ option to enable C++11 features
+Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: i686-generic-linux-gnu-file
 Configure miss: jansson >= 2.5
 Configure miss: jansson >= 2.5
+Configure miss: jansson >= 2.5
 Configure miss: libcares >= 1.7.5
 Configure miss: libcares >= 1.7.5
-Configure miss: libnghttp3 >= 0.7.0
-Configure miss: libnghttp3 >= 0.7.0
-Configure miss: libngtcp2 >= 0.13.0
-Configure miss: libngtcp2 >= 0.13.0
+Configure miss: libcares >= 1.7.5
+Configure miss: libnghttp3 >= 0.9.0
+Configure miss: libnghttp3 >= 0.9.0
+Configure miss: libnghttp3 >= 0.9.0
+Configure miss: libngtcp2 >= 0.15.0
+Configure miss: libngtcp2 >= 0.15.0
+Configure miss: libngtcp2 >= 0.15.0
+Configure miss: library containing je_malloc_stats_print
 Configure miss: library containing je_malloc_stats_print
 Configure miss: library containing je_malloc_stats_print
 Configure miss: library containing malloc_stats_print
 Configure miss: library containing malloc_stats_print
+Configure miss: library containing malloc_stats_print
+Configure miss: sqrt
 Configure miss: sqrt
 Configure miss: sqrt
 Configure miss: struct sockaddr_in6.sin6_len
 Configure miss: struct sockaddr_in6.sin6_len
+Configure miss: struct sockaddr_in6.sin6_len
+Configure miss: x86_64-generic-linux-gnu-file
 Configure miss: x86_64-generic-linux-gnu-file
