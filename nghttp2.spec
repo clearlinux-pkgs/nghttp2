@@ -5,7 +5,7 @@
 #
 Name     : nghttp2
 Version  : 1.53.0
-Release  : 71
+Release  : 72
 URL      : https://github.com/nghttp2/nghttp2/releases/download/v1.53.0/nghttp2-1.53.0.tar.xz
 Source0  : https://github.com/nghttp2/nghttp2/releases/download/v1.53.0/nghttp2-1.53.0.tar.xz
 Summary  : HTTP/2 C library
@@ -141,7 +141,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683728387
+export SOURCE_DATE_EPOCH=1685590141
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -184,11 +184,13 @@ cd ../buildavx2;
 make %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1683728387
+export SOURCE_DATE_EPOCH=1685590141
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/nghttp2
 cp %{_builddir}/nghttp2-%{version}/COPYING %{buildroot}/usr/share/package-licenses/nghttp2/7f6f3c0c08925232459e499d66231cb5da01d811 || :
 cp %{_builddir}/nghttp2-%{version}/doc/_exts/rubydomain/LICENSE.rubydomain %{buildroot}/usr/share/package-licenses/nghttp2/2e3d96196666de3d8582c67fcdc7804f28e1fe0c || :
+cp %{_builddir}/nghttp2-%{version}/third-party/mruby/LICENSE %{buildroot}/usr/share/package-licenses/nghttp2/9fefc4e028cc4f57e5c16215272cf6cc255782d0 || :
+cp %{_builddir}/nghttp2-%{version}/third-party/mruby/mrbgems/mruby-set/LICENSE %{buildroot}/usr/share/package-licenses/nghttp2/0c4ccf74e38a75e48fd6907a13b1c386ca15404f || :
 pushd ../build32/
 %make_install32
 if [ -d  %{buildroot}/usr/lib32/pkgconfig ]
@@ -219,7 +221,6 @@ popd
 
 %files dev
 %defattr(-,root,root,-)
-/V3/usr/lib64/libnghttp2.so
 /usr/include/nghttp2/nghttp2.h
 /usr/include/nghttp2/nghttp2ver.h
 /usr/lib64/libnghttp2.so
@@ -237,7 +238,6 @@ popd
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libnghttp2.so.14
 /V3/usr/lib64/libnghttp2.so.14.24.2
 /usr/lib64/libnghttp2.so.14
 /usr/lib64/libnghttp2.so.14.24.2
@@ -249,8 +249,10 @@ popd
 
 %files license
 %defattr(0644,root,root,0755)
+/usr/share/package-licenses/nghttp2/0c4ccf74e38a75e48fd6907a13b1c386ca15404f
 /usr/share/package-licenses/nghttp2/2e3d96196666de3d8582c67fcdc7804f28e1fe0c
 /usr/share/package-licenses/nghttp2/7f6f3c0c08925232459e499d66231cb5da01d811
+/usr/share/package-licenses/nghttp2/9fefc4e028cc4f57e5c16215272cf6cc255782d0
 
 %files man
 %defattr(0644,root,root,0755)
