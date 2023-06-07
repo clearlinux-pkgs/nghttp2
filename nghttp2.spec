@@ -4,10 +4,10 @@
 # Using build pattern: configure
 #
 Name     : nghttp2
-Version  : 1.53.0
-Release  : 72
-URL      : https://github.com/nghttp2/nghttp2/releases/download/v1.53.0/nghttp2-1.53.0.tar.xz
-Source0  : https://github.com/nghttp2/nghttp2/releases/download/v1.53.0/nghttp2-1.53.0.tar.xz
+Version  : 1.54.0
+Release  : 73
+URL      : https://github.com/nghttp2/nghttp2/releases/download/v1.54.0/nghttp2-1.54.0.tar.xz
+Source0  : https://github.com/nghttp2/nghttp2/releases/download/v1.54.0/nghttp2-1.54.0.tar.xz
 Summary  : HTTP/2 C library
 Group    : Development/Tools
 License  : BSD-2-Clause MIT
@@ -127,13 +127,13 @@ man components for the nghttp2 package.
 
 
 %prep
-%setup -q -n nghttp2-1.53.0
-cd %{_builddir}/nghttp2-1.53.0
+%setup -q -n nghttp2-1.54.0
+cd %{_builddir}/nghttp2-1.54.0
 pushd ..
-cp -a nghttp2-1.53.0 build32
+cp -a nghttp2-1.54.0 build32
 popd
 pushd ..
-cp -a nghttp2-1.53.0 buildavx2
+cp -a nghttp2-1.54.0 buildavx2
 popd
 
 %build
@@ -141,7 +141,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685590141
+export SOURCE_DATE_EPOCH=1686150037
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -184,7 +184,7 @@ cd ../buildavx2;
 make %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1685590141
+export SOURCE_DATE_EPOCH=1686150037
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/nghttp2
 cp %{_builddir}/nghttp2-%{version}/COPYING %{buildroot}/usr/share/package-licenses/nghttp2/7f6f3c0c08925232459e499d66231cb5da01d811 || :
