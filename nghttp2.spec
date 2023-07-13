@@ -7,7 +7,7 @@
 #
 Name     : nghttp2
 Version  : 1.55.0
-Release  : 75
+Release  : 76
 URL      : https://github.com/nghttp2/nghttp2/releases/download/v1.55.0/nghttp2-1.55.0.tar.xz
 Source0  : https://github.com/nghttp2/nghttp2/releases/download/v1.55.0/nghttp2-1.55.0.tar.xz
 Source1  : https://github.com/nghttp2/nghttp2/releases/download/v1.55.0/nghttp2-1.55.0.tar.xz.asc
@@ -20,6 +20,7 @@ Requires: nghttp2-license = %{version}-%{release}
 Requires: nghttp2-man = %{version}-%{release}
 BuildRequires : boost-dev
 BuildRequires : buildreq-configure
+BuildRequires : c-ares-dev
 BuildRequires : gcc-dev32
 BuildRequires : gcc-libgcc32
 BuildRequires : gcc-libstdc++32
@@ -145,7 +146,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1689260287
+export SOURCE_DATE_EPOCH=1689260494
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -188,7 +189,7 @@ cd ../buildavx2;
 make %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1689260287
+export SOURCE_DATE_EPOCH=1689260494
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/nghttp2
 cp %{_builddir}/nghttp2-%{version}/COPYING %{buildroot}/usr/share/package-licenses/nghttp2/7f6f3c0c08925232459e499d66231cb5da01d811 || :
