@@ -6,11 +6,11 @@
 # Source0 file verified with key 0x7E8403D5D673C366 (tatsuhiro.t@gmail.com)
 #
 Name     : nghttp2
-Version  : 1.55.0
-Release  : 76
-URL      : https://github.com/nghttp2/nghttp2/releases/download/v1.55.0/nghttp2-1.55.0.tar.xz
-Source0  : https://github.com/nghttp2/nghttp2/releases/download/v1.55.0/nghttp2-1.55.0.tar.xz
-Source1  : https://github.com/nghttp2/nghttp2/releases/download/v1.55.0/nghttp2-1.55.0.tar.xz.asc
+Version  : 1.55.1
+Release  : 77
+URL      : https://github.com/nghttp2/nghttp2/releases/download/v1.55.1/nghttp2-1.55.1.tar.xz
+Source0  : https://github.com/nghttp2/nghttp2/releases/download/v1.55.1/nghttp2-1.55.1.tar.xz
+Source1  : https://github.com/nghttp2/nghttp2/releases/download/v1.55.1/nghttp2-1.55.1.tar.xz.asc
 Summary  : HTTP/2 C library
 Group    : Development/Tools
 License  : BSD-2-Clause MIT
@@ -132,13 +132,13 @@ man components for the nghttp2 package.
 
 
 %prep
-%setup -q -n nghttp2-1.55.0
-cd %{_builddir}/nghttp2-1.55.0
+%setup -q -n nghttp2-1.55.1
+cd %{_builddir}/nghttp2-1.55.1
 pushd ..
-cp -a nghttp2-1.55.0 build32
+cp -a nghttp2-1.55.1 build32
 popd
 pushd ..
-cp -a nghttp2-1.55.0 buildavx2
+cp -a nghttp2-1.55.1 buildavx2
 popd
 
 %build
@@ -146,7 +146,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1689260494
+export SOURCE_DATE_EPOCH=1689375136
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -189,7 +189,7 @@ cd ../buildavx2;
 make %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1689260494
+export SOURCE_DATE_EPOCH=1689375136
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/nghttp2
 cp %{_builddir}/nghttp2-%{version}/COPYING %{buildroot}/usr/share/package-licenses/nghttp2/7f6f3c0c08925232459e499d66231cb5da01d811 || :
@@ -243,14 +243,14 @@ popd
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libnghttp2.so.14.24.2
+/V3/usr/lib64/libnghttp2.so.14.24.3
 /usr/lib64/libnghttp2.so.14
-/usr/lib64/libnghttp2.so.14.24.2
+/usr/lib64/libnghttp2.so.14.24.3
 
 %files lib32
 %defattr(-,root,root,-)
 /usr/lib32/libnghttp2.so.14
-/usr/lib32/libnghttp2.so.14.24.2
+/usr/lib32/libnghttp2.so.14.24.3
 
 %files license
 %defattr(0644,root,root,0755)

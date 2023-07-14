@@ -17,12 +17,6 @@ Configure miss: i686-generic-linux-gnu-file
 Configure miss: jansson >= 2.5
 Configure miss: jansson >= 2.5
 Configure miss: jansson >= 2.5
-Configure miss: libcares >= 1.7.5
-Configure miss: libcares >= 1.7.5
-Configure miss: libcares >= 1.7.5
-Configure miss: libnghttp3 >= 0.13.0
-Configure miss: libnghttp3 >= 0.13.0
-Configure miss: libnghttp3 >= 0.13.0
 Configure miss: libngtcp2 >= 0.17.0
 Configure miss: libngtcp2 >= 0.17.0
 Configure miss: libngtcp2 >= 0.17.0
