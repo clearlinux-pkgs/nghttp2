@@ -4,6 +4,9 @@ Configure miss: SSL_is_quic
 Configure miss: SSL_set_quic_early_data_context
 Configure miss: SSL_set_quic_early_data_context
 Configure miss: SSL_set_quic_early_data_context
+Configure miss: checking for GetTickCount64
+Configure miss: checking for GetTickCount64
+Configure miss: checking for GetTickCount64
 Configure miss: ev.h
 Configure miss: ev.h
 Configure miss: ev_time in -lev
@@ -35,5 +38,8 @@ Configure miss: sqrt
 Configure miss: struct sockaddr_in6.sin6_len
 Configure miss: struct sockaddr_in6.sin6_len
 Configure miss: struct sockaddr_in6.sin6_len
+Configure miss: sysinfoapi.h
+Configure miss: sysinfoapi.h
+Configure miss: sysinfoapi.h
 Configure miss: x86_64-generic-linux-gnu-file
 Configure miss: x86_64-generic-linux-gnu-file
