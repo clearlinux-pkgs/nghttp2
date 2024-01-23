@@ -1,6 +1,6 @@
-Configure miss: SSL_is_quic
-Configure miss: SSL_is_quic
-Configure miss: SSL_is_quic
+Configure miss: SSL_provide_quic_data
+Configure miss: SSL_provide_quic_data
+Configure miss: SSL_provide_quic_data
 Configure miss: SSL_set_quic_early_data_context
 Configure miss: SSL_set_quic_early_data_context
 Configure miss: SSL_set_quic_early_data_context
@@ -20,9 +20,6 @@ Configure miss: i686-generic-linux-gnu-file
 Configure miss: jansson >= 2.5
 Configure miss: jansson >= 2.5
 Configure miss: jansson >= 2.5
-Configure miss: libnghttp3 >= 1.0.0
-Configure miss: libnghttp3 >= 1.0.0
-Configure miss: libnghttp3 >= 1.0.0
 Configure miss: libngtcp2 >= 1.0.0
 Configure miss: libngtcp2 >= 1.0.0
 Configure miss: libngtcp2 >= 1.0.0
@@ -38,8 +35,5 @@ Configure miss: sqrt
 Configure miss: struct sockaddr_in6.sin6_len
 Configure miss: struct sockaddr_in6.sin6_len
 Configure miss: struct sockaddr_in6.sin6_len
-Configure miss: sysinfoapi.h
-Configure miss: sysinfoapi.h
-Configure miss: sysinfoapi.h
 Configure miss: x86_64-generic-linux-gnu-file
 Configure miss: x86_64-generic-linux-gnu-file
