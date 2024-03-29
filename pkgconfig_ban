@@ -20,3 +20,5 @@ libngtcp2_crypto_quictls
 32libngtcp2_crypto_quictls
 32libbrotlienc
 32libbrotlidec
+liblzma
+32liblzma

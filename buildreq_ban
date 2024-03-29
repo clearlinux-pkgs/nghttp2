@@ -2,3 +2,5 @@
 # undesirable. One entry per line, no whitespace.
 Cython-dev
 buildreq-golang
+xz-dev
+xz-dev32
