@@ -34,3 +34,6 @@ Configure miss: sqrt
 Configure miss: struct sockaddr_in6.sin6_len
 Configure miss: struct sockaddr_in6.sin6_len
 Configure miss: struct sockaddr_in6.sin6_len
+Configure miss: whether g++ supports C++20 features by default
+Configure miss: whether g++ supports C++20 features by default
+Configure miss: whether g++ supports C++20 features by default
