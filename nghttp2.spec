@@ -8,11 +8,11 @@
 # Source0 file verified with key 0x5339A2BE82E07DEC (tatsuhiro.t@gmail.com)
 #
 Name     : nghttp2
-Version  : 1.62.0
-Release  : 86
-URL      : https://github.com/nghttp2/nghttp2/releases/download/v1.62.0/nghttp2-1.62.0.tar.gz
-Source0  : https://github.com/nghttp2/nghttp2/releases/download/v1.62.0/nghttp2-1.62.0.tar.gz
-Source1  : https://github.com/nghttp2/nghttp2/releases/download/v1.62.0/nghttp2-1.62.0.tar.gz.asc
+Version  : 1.62.1
+Release  : 87
+URL      : https://github.com/nghttp2/nghttp2/releases/download/v1.62.1/nghttp2-1.62.1.tar.gz
+Source0  : https://github.com/nghttp2/nghttp2/releases/download/v1.62.1/nghttp2-1.62.1.tar.gz
+Source1  : https://github.com/nghttp2/nghttp2/releases/download/v1.62.1/nghttp2-1.62.1.tar.gz.asc
 Source2  : 5339A2BE82E07DEC.pkey
 Summary  : HTTP/2 C library
 Group    : Development/Tools
@@ -139,13 +139,13 @@ chmod 700 .gnupg
 gpg --homedir .gnupg --import %{SOURCE2}
 gpg --homedir .gnupg --status-fd 1 --verify %{SOURCE1} %{SOURCE0} > gpg.status
 grep -E '^\[GNUPG:\] (GOODSIG|EXPKEYSIG) 5339A2BE82E07DEC' gpg.status
-%setup -q -n nghttp2-1.62.0
-cd %{_builddir}/nghttp2-1.62.0
+%setup -q -n nghttp2-1.62.1
+cd %{_builddir}/nghttp2-1.62.1
 pushd ..
-cp -a nghttp2-1.62.0 build32
+cp -a nghttp2-1.62.1 build32
 popd
 pushd ..
-cp -a nghttp2-1.62.0 buildavx2
+cp -a nghttp2-1.62.1 buildavx2
 popd
 
 %build
@@ -153,7 +153,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1715618365
+export SOURCE_DATE_EPOCH=1716142020
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -218,7 +218,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1715618365
+export SOURCE_DATE_EPOCH=1716142020
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/nghttp2
 cp %{_builddir}/nghttp2-%{version}/COPYING %{buildroot}/usr/share/package-licenses/nghttp2/7f6f3c0c08925232459e499d66231cb5da01d811 || :
