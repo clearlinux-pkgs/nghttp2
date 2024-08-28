@@ -22,3 +22,7 @@ libngtcp2_crypto_quictls
 32libbrotlidec
 liblzma
 32liblzma
+32libngtcp2_crypto_wolfssl
+libngtcp2_crypto_wolfssl
+wolfssl
+32wolfssl
