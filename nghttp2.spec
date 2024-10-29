@@ -9,7 +9,7 @@
 #
 Name     : nghttp2
 Version  : 1.64.0
-Release  : 89
+Release  : 90
 URL      : https://github.com/nghttp2/nghttp2/releases/download/v1.64.0/nghttp2-1.64.0.tar.gz
 Source0  : https://github.com/nghttp2/nghttp2/releases/download/v1.64.0/nghttp2-1.64.0.tar.gz
 Source1  : https://github.com/nghttp2/nghttp2/releases/download/v1.64.0/nghttp2-1.64.0.tar.gz.asc
