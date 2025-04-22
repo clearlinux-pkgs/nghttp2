@@ -10,7 +10,7 @@
 %define keepstatic 1
 Name     : nghttp2
 Version  : 1.65.0
-Release  : 92
+Release  : 93
 URL      : https://github.com/nghttp2/nghttp2/releases/download/v1.65.0/nghttp2-1.65.0.tar.gz
 Source0  : https://github.com/nghttp2/nghttp2/releases/download/v1.65.0/nghttp2-1.65.0.tar.gz
 Source1  : https://github.com/nghttp2/nghttp2/releases/download/v1.65.0/nghttp2-1.65.0.tar.gz.asc
